@@ -1,0 +1,160 @@
+/*POLICES*/
+@font-face {
+    font-family: 'grandhotel';
+    src: url('police/GrandHotel-Regular.otf');
+}
+@font-face {
+    font-family: 'ostrich';
+    src: url('police/DejaVuSans-ExtraLight.ttf');
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('police/Oswald-Regular.ttf');
+}
+@font-face {
+    font-family: 'open';
+    src: url('police/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'open_gras';
+    src: url('police/OpenSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'Aller';
+    src: url('police/aller.ttf');
+}
+/*FIN POLICES */
+
+/*BODY*/
+body{
+    margin:0px;
+    padding:0px;
+}
+#bloc_page{
+    margin: 0;
+    width:100%;
+}
+
+a{
+    color: black;
+}
+/*FIN BODY*/
+
+/*LE HEADER*/
+header{
+    height: 25%;
+    margin-bottom: 0;
+}
+
+#titre_principal{
+    display: flex;
+    justify-content: center;
+}
+
+.logoFlottant{
+    width:15%;
+    height:90%;
+}
+
+
+/*FIN DU HEADER*/
+
+/*SECTION*/
+section {
+    text-align:center;
+    margin-bottom: 5%;
+}
+
+#formulaire{
+    width:40%;
+    margin:0 auto;
+    margin-left: 30%;
+    display: flex;
+}
+
+#formulaire h1{
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 3em;
+}
+
+#droite{
+    width:51%;
+    padding-top:17%;
+    padding-left:5%;
+    text-align: left;
+}
+
+br{
+    margin-bottom: 6%;
+}
+
+/* Set a style for all buttons */
+input[type=text], input[type=email], input[type=date], select, input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    background-color: #ff5757;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: #ff5757;
+    margin: 7px 0;
+    border: 1px solid #ff5757;
+}
+
+label{
+    float:left;
+}
+
+/*FOOTER*/
+footer{
+    background-color: rgb(26,26,26);
+    color: white;
+    height:7.7em;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer #gauche{
+    flex:left;
+    margin-left: 10%;
+    width:90%;
+}
+
+footer #droite{
+    flex:left;
+    padding-top:0%;
+    padding-left: 0%;
+}
+footer a{
+    color:white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+/*FIN FOOTER*/
