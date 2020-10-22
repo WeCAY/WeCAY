@@ -28,8 +28,8 @@
 
    		         		</div>
    		         		<div id="droite">
-   		         			<p><a href="inscription.html">Inscription</a></p><br>
-   		         			<p><a href="mdp_oublie.html"> Mot de passe oublié</a></p>
+   		         			<p><a href="inscription.php">Inscription</a></p><br>
+   		         			<p><a href="mdp_oublie.php"> Mot de passe oublié</a></p>
    		         		</div>
    		         	</div>
             </section>
