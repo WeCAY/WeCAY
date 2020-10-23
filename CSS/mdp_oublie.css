@@ -28,68 +28,38 @@
 
 /*BODY*/
 body{
-    margin:0px;
-    padding:0px;
-}
-#bloc_page{
-    margin: 0;
+    margin:auto;
     width:100%;
 }
-a{
-    color: black;
-}
-
-a:hover{
-    color: #ff5757;
-}
-
-
 /*FIN BODY*/
 
 /*LE HEADER*/
 header{
     height: 25%;
-    margin-bottom: 0;
 }
-
 #titre_principal{
     display: flex;
     justify-content: center;
-
 }
 .logoFlottant{
     width:15%;
     height:90%;
-
 }
 /*FIN DU HEADER*/
 
 /*SECTION*/
 section {
     text-align:center;
-    margin-bottom: 5%;
+    margin-bottom: 6%;
 }
 #container{
     width:40%;
-    margin:0 auto;
-    margin-left: 32%;
-    display:flex;
+    margin:auto;
 }
 #container h1{
-    width: 60%;
-    margin: 0 auto;
-    padding-bottom: 10px;
+    width: 50%;
+    margin:auto;
     font-size: 3em;
-}
-#droite{
-    width:51%;
-    padding-top:17%;
-    padding-left:5%;
-    text-align: left;
-
-}
-br{
-    margin-bottom: 6%;
 }
 input[type=text] {
     width: 100%;
@@ -105,17 +75,14 @@ input[type=text] {
 input[type=submit] {
     background-color: #ff5757;
     color: white;
-    padding: 14px 18px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
+    padding: 3%;
+    border: 1px solid #ff5757; 
     width: 100%;
     border-radius: 5px;
 }
 input[type=submit]:hover {
     background-color: white;
     color: #ff5757;
-    margin: 7px 0;
     border: 1px solid #ff5757;
 }
 label{
@@ -126,10 +93,8 @@ label{
 footer{
     background-color: rgb(26,26,26);
     color: white;
-    height:7.7em;
-    width:100%;
+    height:8em;
     display: flex;
-    justify-content: center;
     flex-direction: row;
 }
 footer #gauche{
@@ -147,7 +112,6 @@ footer a{
     text-decoration: none;
 }
 footer a:hover{
-    color:white;
     text-decoration: underline;
 }
 

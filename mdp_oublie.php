@@ -18,7 +18,7 @@
                 <label><b>Adresse mail</b></label>
                 <input type="text" placeholder="Entrez votre adresse mail" name="username" required>
 
-                <input type="submit" id='submit' value='RÉINITIALIISER LE MOT DE PASSE' >
+                <input type="submit" id='submit' value='RÉINITIALISER LE MOT DE PASSE' >
 
 
             </div>
