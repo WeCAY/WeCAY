@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
     	<meta charset="utf-8" />
-    	<link rel="stylesheet" href="CSS/accueil1.css" />
+    	<link rel="stylesheet" href="CSS/accueil.css" />
   	  	<title>Accueil | WeCAY</title>
     </head>
     

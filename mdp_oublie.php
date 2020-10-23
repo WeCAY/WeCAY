@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="CSS/mdp_oublie1.css" />
+    <link rel="stylesheet" href="CSS/mdp_oublie.css" />
     <title>Mot de passe oublié | WeCAY</title>
 </head>
 

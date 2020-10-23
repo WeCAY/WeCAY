@@ -28,16 +28,22 @@
 
 /*BODY*/
 body{
-	margin:0px;
-	padding:0px;
+    margin:0px;
+    padding:0px;
 }
 #bloc_page{
-	margin: 0;
-	width:100%;
+    margin: 0;
+    width:100%;
 }
 a{
-	color: black;
+    color: black;
 }
+
+a:hover{
+    color: #ff5757;
+}
+
+
 /*FIN BODY*/
 
 /*LE HEADER*/
@@ -47,19 +53,19 @@ header{
 }
 
 #titre_principal{
-	display: flex;
-   	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 .logoFlottant{
-	width:15%;
-	height:90%;
+    width:15%;
+    height:90%;
 }
 /*FIN DU HEADER*/
 
 /*SECTION*/
 section {
-	text-align:center;
-	margin-bottom: 5%;
+    text-align:center;
+    margin-bottom: 5%;
 }
 #container{
     width:40%;
@@ -74,14 +80,14 @@ section {
     font-size: 3em;
 }
 #droite{
-	width:51%;
-	padding-top:17%;
-	padding-left:5%;
-	text-align: left;
+    width:51%;
+    padding-top:17%;
+    padding-left:5%;
+    text-align: left;
 
 }
 br{
-	margin-bottom: 6%;
+    margin-bottom: 6%;
 }
 input[type=text], input[type=password] {
     width: 100%;
@@ -97,7 +103,7 @@ input[type=text], input[type=password] {
 input[type=submit] {
     background-color: #ff5757;
     color: white;
-    padding: 14px 20px;
+    padding: 14px 18px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
@@ -111,39 +117,39 @@ input[type=submit]:hover {
     border: 1px solid #ff5757;
 }
 label{
-	float:left;
+    float:left;
 }
 input[type=checkbox]{
-	float:left;
+    float:left;
 }
 
 /*FOOTER*/
 footer{
-	background-color: rgb(26,26,26);
-	color: white;
-	height:7.7em;
-	width:100%;
-	display: flex;
+    background-color: rgb(26,26,26);
+    color: white;
+    height:7.7em;
+    width:100%;
+    display: flex;
     justify-content: center;
     flex-direction: row;
 }
 footer #gauche{
-	flex:left;
-	margin-left: 10%;
-	width:90%;
+    flex:left;
+    margin-left: 10%;
+    width:90%;
 }
 footer #droite{
-	flex:left;
-	padding-top:0%;
-	padding-left: 0%;
+    flex:left;
+    padding-top:0%;
+    padding-left: 0%;
 }
 footer a{
-	color:white;
-	text-decoration: none;
+    color:white;
+    text-decoration: none;
 }
 footer a:hover{
-	color:white;
-	text-decoration: underline;
+    color:white;
+    text-decoration: underline;
 }
 
 /*FIN FOOTER*/
