@@ -3,7 +3,7 @@
     <head>
     	<meta charset="utf-8" />
     	<link rel="stylesheet" href="CSS/accueil.css" />
-  	  	<title>Acceuil | WeCAY</title>
+  	  	<title>Accueil | WeCAY</title>
     </head>
     
     <body>
@@ -16,20 +16,24 @@
    		         			<h1>Connexion</h1>
 
         					<label><b>Nom d'utilisateur</b></label>
-                			<input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
+                			<input type="text" placeholder="Entrez votre nom d'utilisateur" name="username" required>
 
                 			<label><b>Mot de passe</b></label>
-                			<input type="password" placeholder="Entrer le mot de passe" name="password" required>
+                			<input type="password" placeholder="Entrez votre mot de passe" name="password" required>
 
                 			<input type="checkbox" class="souvenir" name="souvenir">
                 			<label for="souvenir" class="souvenir">Se souvenir de moi</label>
 
                 			<input type="submit" id='submit' value='CONNEXION' >
 
+                            <div id = "bottom">
+                                <p>Pas encore inscrit ? <a href="inscription.php">Créer un compte</a></p>
+                                <p><a href="mdp_oublie.php"> Mot de passe oublié</a></p>
+                            </div>
+
    		         		</div>
    		         		<div id="droite">
-   		         			<p><a href="inscription.php">Inscription</a></p><br>
-   		         			<p><a href="mdp_oublie.php"> Mot de passe oublié</a></p>
+
    		         		</div>
    		         	</div>
             </section>
