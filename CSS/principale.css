@@ -1,0 +1,169 @@
+/*POLICES*/
+@font-face {
+    font-family: 'grandhotel';
+    src: url('police/GrandHotel-Regular.otf');
+}
+@font-face {
+    font-family: 'ostrich';
+    src: url('police/DejaVuSans-ExtraLight.ttf');
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('police/Oswald-Regular.ttf');
+}
+@font-face {
+    font-family: 'open';
+    src: url('police/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'open_gras';
+    src: url('police/OpenSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'Aller';
+    src: url('police/aller.ttf');
+}
+/*FIN POLICES */
+
+
+/*BODY*/
+body{
+    margin:auto;
+    padding:auto;
+    background: linear-gradient(lightskyblue, white);
+}
+#bloc_page{
+    width:100%;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: #ff5757;
+}
+
+
+/*FIN BODY*/
+
+/*LE HEADER*/
+header{
+    height: 25%;
+    margin-bottom: 0;
+}
+
+#titre_principal{
+    display: flex;
+    justify-content: center;
+}
+.logoFlottant{
+    width:12em;
+    height: 100%;
+}
+/*FIN DU HEADER*/
+
+input[type=submit] {
+    background-color: lightskyblue;
+    color: white;
+    padding: 14px 18px;
+    margin: 8px 0;
+    border: 1px solid lightskyblue;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-family: "Century Gothic", "Helvetica Neue";
+    font-size: 1em;
+}
+
+/*FOOTER*/
+footer{
+    /*position: fixed;
+    bottom: 0;*/
+    background-color: rgb(26,26,26);
+    color: white;
+    height:20em;
+    width:100%;
+    font-family: "Gill Sans";
+}
+
+footer a{
+    color:white;
+    text-decoration: none;
+}
+footer a:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+footer #block1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer #block1 #gauche{
+    width:25%;
+    /*padding-left:5%;*/
+    margin-left: 10%;
+    text-align: left;
+    font-size: 1em;
+}
+footer #block1 #droite{
+    width:25%;
+    /*padding-left: 5%;*/
+    text-align: left;
+    font-size: 1em;
+}
+
+footer #block1 #centreg{
+    width:25%;
+    /*padding-left: 5%;*/
+    text-align: left;
+    font-size: 1em;
+}
+
+footer #block1 #centred{
+    width:25%;
+    /*padding-left: 5%;*/
+}
+.reseaux{
+    width: 12%;
+    padding: 2% 5% 0 0 ;
+}
+
+footer h1{
+    font-size: 1.1em;
+    font-weight: normal;
+
+}
+
+footer #block2{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding-left: 10%;
+}
+
+footer #block2 input[type=email]{
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px 0 0 5px;
+}
+
+footer label{
+    width: 30%;
+}
+#newsletter{
+    display: flex;
+    flex-direction: row;
+}
+
+#subscribe{
+    width: 10%;
+    border-radius: 0 5px 5px 0;
+}
+
+/*FIN FOOTER*/
