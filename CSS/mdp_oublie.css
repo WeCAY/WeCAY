@@ -29,39 +29,44 @@
 /*BODY*/
 body{
     margin:auto;
-    width:100%;
+    padding:auto;
+    background: linear-gradient(lightskyblue, white);
 }
+
 /*FIN BODY*/
 
 /*LE HEADER*/
 header{
     height: 25%;
+    margin-bottom: 0;
 }
 #titre_principal{
     display: flex;
     justify-content: center;
 }
 .logoFlottant{
-    width:15%;
-    height:90%;
+    width:12em;
+    height: 100%;
 }
 /*FIN DU HEADER*/
 
 /*SECTION*/
 section {
     text-align:center;
-    margin-bottom: 6%;
+    margin-bottom: 5%;
+    display:flex;
+    justify-content: center;
 }
 #container{
-    width:40%;
-    margin:auto;
+    width:30%;
+    font-family: Optima;
 }
 #container h1{
-    width: 50%;
     margin:auto;
-    font-size: 3em;
+    padding-bottom: 10px;
+    font-size: 2.5em;
 }
-input[type=text] {
+input[type=text], input[type=email] {
     width: 100%;
     padding: 12px 20px;
     margin:8px 0;
@@ -73,17 +78,21 @@ input[type=text] {
 
 /* Set a style for all buttons */
 input[type=submit] {
-    background-color: #ff5757;
+    background-color: lightskyblue;
     color: white;
-    padding: 3%;
-    border: 1px solid #ff5757; 
+    padding: 14px 18px;
+    margin: 8px 0;
+    border: 1px solid lightskyblue;
+    cursor: pointer;
     width: 100%;
     border-radius: 5px;
+    font-family: "Century Gothic";
+    font-size: 1em;
 }
 input[type=submit]:hover {
     background-color: white;
     color: #ff5757;
-    border: 1px solid #ff5757;
+
 }
 label{
     float:left;
@@ -91,28 +100,94 @@ label{
 
 /*FOOTER*/
 footer{
+    /*position: fixed;
+    bottom: 0;*/
     background-color: rgb(26,26,26);
     color: white;
-    height:8em;
-    display: flex;
-    flex-direction: row;
+    height:20em;
+    width:100%;
+    font-family: "Gill Sans";
 }
-footer #gauche{
-    flex:left;
-    margin-left: 10%;
-    width:90%;
-}
-footer #droite{
-    flex:left;
-    padding-top:0%;
-    padding-left: 0%;
-}
+
 footer a{
     color:white;
     text-decoration: none;
 }
 footer a:hover{
+    color:white;
     text-decoration: underline;
+}
+
+footer #block1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer #block1 #gauche{
+    width:25%;
+    /*padding-left:5%;*/
+    margin-left: 10%;
+    text-align: left;
+    font-size: 1em;
+}
+footer #block1 #droite{
+    width:25%;
+    /*padding-left: 5%;*/
+    text-align: left;
+    font-size: 1em;
+}
+
+footer #block1 #centreg{
+    width:25%;
+    /*padding-left: 5%;*/
+    text-align: left;
+    font-size: 1em;
+}
+
+footer #block1 #centred{
+    width:25%;
+    /*padding-left: 5%;*/
+}
+.reseaux{
+    width: 12%;
+    padding: 2% 5% 0 0 ;
+}
+
+footer h1{
+    font-size: 1.1em;
+    font-weight: normal;
+
+}
+
+footer #block2{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding-left: 10%;
+}
+
+footer #block2 input[type=email]{
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px 0 0 5px;
+}
+
+footer label{
+    width: 30%;
+}
+#newsletter{
+    display: flex;
+    flex-direction: row;
+}
+
+#subscribe{
+    width: 10%;
+    border-radius: 0 5px 5px 0;
 }
 
 /*FIN FOOTER*/

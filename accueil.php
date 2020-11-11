@@ -8,33 +8,37 @@
     
     <body>
         <div id="bloc_page">
-            <?php include("constant/header.php"); ?>
+            <?php include("constant/header.php");
+            include("connect_to_db.php"); ?>
 
             <section>
    		         	<div id="container">
    		         		<div id="renseignement">
-   		         			<h1>Connexion</h1>
+                            <form action="verification.php" method="post"> <!--action="verification.php"-->
+                                <h1>Se connecter</h1>
 
-        					<label><b>Nom d'utilisateur</b></label>
-                			<input type="text" placeholder="Entrez votre nom d'utilisateur" name="username" required>
+                                <label>Nom d'utilisateur</label>
+                                <input type="text" placeholder="Entrez votre nom d'utilisateur" name="username" required>
+                                <br>
+                                <br>
+                                <label>Mot de passe</label>
+                                <input type="password" placeholder="Entrez votre mot de passe" name="password" required>
+                                <br>
+                                <br>
 
-                			<label><b>Mot de passe</b></label>
-                			<input type="password" placeholder="Entrez votre mot de passe" name="password" required>
+                                <input type="checkbox" class="souvenir" name="souvenir">
+                                <label for="souvenir" class="souvenir">Se souvenir de moi</label>
+                                <br>
+                                <br>
+                                <input type="submit" id='submit' value='CONNEXION' name="login" >
 
-                			<input type="checkbox" class="souvenir" name="souvenir">
-                			<label for="souvenir" class="souvenir">Se souvenir de moi</label>
+                                <div id = "bottom">
+                                    <p>Pas encore inscrit ? <a href="inscription.php">Créer un compte</a></p>
+                                    <p><a href="mdp_oublie.php"> Mot de passe oublié</a></p>
+                                </div>
 
-                			<input type="submit" id='submit' value='CONNEXION' >
-
-                            <div id = "bottom">
-                                <p>Pas encore inscrit ? <a href="inscription.php">Créer un compte</a></p>
-                                <p><a href="mdp_oublie.php"> Mot de passe oublié</a></p>
-                            </div>
-
-   		         		</div>
-   		         		<div id="droite">
-
-   		         		</div>
+                            </form>
+                        </div>
    		         	</div>
             </section>
 
@@ -42,4 +46,3 @@
         </div>
     </body>
 </html>
-

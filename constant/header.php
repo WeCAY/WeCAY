@@ -1,5 +1,5 @@
 <header id="header">
      <div id="titre_principal">
-        <img src="image/WeCay_logo.png" class="logoFlottant" alt="Logo du site" />
-	</div>
+         <a href="accueil.php"><img src="image/WeCAY_logo.png" class="logoFlottant" alt="Logo du site" /></a>
+     </div>
 </header>

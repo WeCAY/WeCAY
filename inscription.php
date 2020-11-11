@@ -8,12 +8,13 @@
 
     <body>
         <div id = "block_page">
-            <?php include("constant/header.php"); ?>
+            <?php include("constant/header.php");
+            include("connect_to_db.php");?>
 
             <section>
                     <div id="formulaire">
                         <div id="renseignement">
-                            <h1>Inscription</h1>
+                            <h1>S'inscrire</h1>
 
                             <label>Nom</label>
                             <input type="text" placeholder="Entrez votre nom" name="name" required>
