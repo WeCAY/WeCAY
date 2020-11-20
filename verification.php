@@ -26,7 +26,7 @@ if(isset($_POST['login'])) { // si le bouton "Connexion" est appuyé
                 echo "Erreur de connexion à la base de données.";
             } else {
                 // on fait maintenant la requête dans la base de données pour rechercher si ces données existe et correspondent:
-                $nRows = $db->query("SELECT COUNT(*) from utilisateur WHERE nom_utilisateur = '".$nom_utilisateur."' AND mot_de_passe = '".$mot_de_passe."'")->fetchColumn();
+                $nRows = $db->query("SELECT COUNT(*) from utilisateur WHERE num_securite_social = '".$nom_utilisateur."' AND mot_de_passe = '".$mot_de_passe."'")->fetchColumn();
                 //si vous avez enregistré le mot de passe en md5() il vous suffira de faire la vérification en mettant mdp = '".md5($MotDePasse)."' au lieu de mdp = '".$MotDePasse."'
                 // si il y a un résultat, mysqli_num_rows() nous donnera alors 1
                 // si mysqli_num_rows() retourne 0 c'est qu'il a trouvé aucun résultat
