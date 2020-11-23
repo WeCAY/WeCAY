@@ -1,27 +1,42 @@
 /*POLICES*/
 @font-face {
     font-family: 'grandhotel';
-    src: url('police/GrandHotel-Regular.otf');
+    src: url('../police/GrandHotel-Regular.otf');
 }
 @font-face {
     font-family: 'ostrich';
-    src: url('police/DejaVuSans-ExtraLight.ttf');
+    src: url('../police/DejaVuSans-ExtraLight.ttf');
 }
 @font-face {
     font-family: 'Oswald';
-    src: url('police/Oswald-Regular.ttf');
+    src: url('../police/Oswald-Regular.ttf');
 }
 @font-face {
     font-family: 'open';
-    src: url('police/OpenSans-Regular.ttf');
+    src: url('../police/OpenSans-Regular.ttf');
 }
 @font-face {
     font-family: 'open_gras';
-    src: url('police/OpenSans-Bold.ttf');
+    src: url('../police/OpenSans-Bold.ttf');
 }
 @font-face {
     font-family: 'Aller';
-    src: url('police/aller.ttf');
+    src: url('../police/Aller_Rg.ttf');
+}
+
+@font-face {
+    font-family:'Champagne & Limousines';
+    src: url("../police/Champagne_Limousines.ttf");
+}
+
+@font-face {
+    font-family:'Century Gothic';
+    src: url("../police/gothic.ttf");
+}
+
+@font-face {
+    font-family: Optima;
+    src: url("../police/Optima.ttc");
 }
 /*FIN POLICES */
 
@@ -86,14 +101,14 @@ input[type=submit] {
     cursor: pointer;
     width: 100%;
     border-radius: 5px;
-    font-family: "Century Gothic";
+    font-family: 'Century Gothic',"Helvetica Neue";
     font-size: 1em;
 }
 input[type=submit]:hover {
     background-color: white;
     color: #ff5757;
-
 }
+
 label{
     float:left;
 }

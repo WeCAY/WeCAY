@@ -38,6 +38,8 @@
     font-family: Optima;
     src: url("../police/Optima.ttc");
 }
+
+
 /*FIN POLICES */
 
 
@@ -71,11 +73,40 @@ header{
     justify-content: center;
 }
 .logoFlottant{
+    /*width:10em;
+    height:98%;*/
     width:12em;
     height: 100%;
 }
 /*FIN DU HEADER*/
 
+/*SECTION*/
+section {
+    text-align: center;
+    margin-bottom: 3%;
+    display:flex;
+    justify-content: center;
+}
+#container{
+    width:30%;
+    font-family: Optima;
+}
+#container h1{
+    margin: auto;
+    padding-bottom: 10px;
+    font-size: 2.5em;
+}
+input[type=text], input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/* Set a style for all buttons */
 input[type=submit] {
     background-color: lightskyblue;
     color: white;
@@ -88,17 +119,23 @@ input[type=submit] {
     font-family: "Century Gothic", "Helvetica Neue";
     font-size: 1em;
 }
-
 input[type=submit]:hover {
     background-color: white;
     color: #ff5757;
+
+}
+label{
+    float:left;
+
+}
+input[type=checkbox]{
+    float:left;
 }
 
 /*FOOTER*/
 footer{
     /*position: fixed;
     bottom: 0;*/
-    
     background-color: rgb(26,26,26);
     color: white;
     height:20em;
