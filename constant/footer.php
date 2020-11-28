@@ -4,14 +4,14 @@
         <div id="gauche">
             <h1>INFORMATIONS PRATIQUES</h1>
             <br>
-            <p><a href="mentions_legales.html">Mentions légales</a></p>
+            <p><a href="administratif/mentions_legales.pdf">Mentions légales</a></p>
             <p><a href="protection.html">Protection des données</a></p>
         </div>
         <div id="centreg">
             <h1>SERVICE CLIENT</h1>
             <br>
             <p><a href="mailto:contact@wecay.fr">Nous contacter</a></p>
-            <p><a href="faq.html">FAQ</a></p>
+            <p><a href="faq.php">FAQ</a></p>
         </div>
         <div id="centred">
             <h1>SUIVEZ-NOUS</h1>
@@ -31,7 +31,7 @@
         <label>Rejoingez notre newsletter pour être au courant de nos actualités et des dernières nouveautés</label>
         <div id="newsletter">
         <input type="email" placeholder="adresse.mail@wecay.com" name="mail" required>
-        <input type="submit" id='subscribe' value="S'ABONNER" name="subscribe" >
+        <input type="submit" id='subscribe' value="S'abonner" name="subscribe" >
         </div>
     </div>
 </footer>

@@ -2,14 +2,13 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="CSS/mdp_oublie.css" />
+    <link rel="stylesheet" href="CSS/forgot_pw.css" />
     <title>Mot de passe oublié | WeCAY</title>
 </head>
 
     <body>
         <div id="bloc_page">
-            <?php include("constant/header.php");
-            include("connect_to_db.php");?>
+            <?php include("constant/header.php"); ?>
 
             <section>
                 <div id="container">
@@ -23,7 +22,7 @@
                         <label>Adresse mail</label>
                         <input type="email" placeholder="Entrez votre adresse mail" name="mail" required>
 
-                        <input type="submit" id='submit' value='RÉINITIALISER LE MOT DE PASSE' >
+                        <input type="submit" id='submit' value='Réinitialiser le mot de passe' >
 
                     </div>
                 </div>
