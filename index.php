@@ -17,6 +17,7 @@ sur la page connexion et de mot de passe oublié
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="CSS/index.css" />
+    <script type="text/javascript" src="js/show_pw.js"></script>
     <title>Accueil | WeCAY</title>
 </head>
 
@@ -36,15 +37,18 @@ sur la page connexion et de mot de passe oublié
                     <br>
                     <br>
                     <label>Mot de passe</label>
-                    <input type="password" placeholder="Entrez votre mot de passe" name="password" required>
+                    <input type="password" placeholder="Entrez votre mot de passe" name="password" id="mdp" required>
                     <br>
-                    <br>
-                    <input type="checkbox" class="souvenir" name="souvenir">
-                    <label for="souvenir" class="souvenir">Se souvenir de moi</label>
+                    <input type="checkbox" class="souvenir" id="montrer_mdp" onclick="show()">
+                    <label for="montrer_mdp" class="souvenir">Montrer le mot de passe</label>
                     <br>
                     <br>
                     <input type="submit" id='submit' value='Connexion' name="login" >
 
+                    <input type="checkbox" class="souvenir" name="souvenir" id="souvenir">
+                    <label for="souvenir" class="souvenir">Se souvenir de moi</label>
+                    <br>
+                    <br>
                     <?php
 
                     if (isset($_POST['login']) && !empty($_POST['login'])) {
