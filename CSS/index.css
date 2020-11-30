@@ -1,45 +1,16 @@
 /*POLICES*/
 @font-face {
-    font-family: 'grandhotel';
-    src: url('../police/GrandHotel-Regular.otf');
-}
-@font-face {
-    font-family: 'ostrich';
-    src: url('../police/DejaVuSans-ExtraLight.ttf');
-}
-@font-face {
-    font-family: 'Oswald';
-    src: url('../police/Oswald-Regular.ttf');
-}
-@font-face {
-    font-family: 'open';
-    src: url('../police/OpenSans-Regular.ttf');
-}
-@font-face {
-    font-family: 'open_gras';
-    src: url('../police/OpenSans-Bold.ttf');
-}
-@font-face {
-    font-family: 'Aller';
-    src: url('../police/Aller_Rg.ttf');
-}
-
-@font-face {
-    font-family:'Champagne & Limousines';
-    src: url("../police/Champagne_Limousines.ttf");
-}
-
-@font-face {
     font-family:'Century Gothic';
     src: url("../police/gothic.ttf");
 }
-
 @font-face {
-    font-family: Optima;
-    src: url("../police/Optima.ttc");
+    font-family: 'Optima';
+    src: url("../police/unicode.optima.ttf");
 }
-
-
+@font-face {
+    font-family: 'gillsans';
+    src: url("../police/gillsans.ttf");
+}
 /*FIN POLICES */
 
 
@@ -49,34 +20,22 @@ body{
     padding:auto;
     background: linear-gradient(lightskyblue, white);
 }
-#bloc_page{
-    width:100%;
-}
 a{
     color: black;
 }
 a:hover{
     color: #ff5757;
 }
-
-
 /*FIN BODY*/
 
-/*LE HEADER*/
-header{
-    height: 25%;
-    margin-bottom: 0;
-}
 
+/*LE HEADER*/
 #titre_principal{
     display: flex;
     justify-content: center;
 }
 .logoFlottant{
-    /*width:10em;
-    height:98%;*/
     width:12em;
-    height: 100%;
 }
 /*FIN DU HEADER*/
 
@@ -89,7 +48,7 @@ section {
 }
 #container{
     width:30%;
-    font-family: Optima;
+    font-family: "Optima";
 }
 #container h1{
     margin: auto;
@@ -116,7 +75,7 @@ input[type=submit] {
     cursor: pointer;
     width: 100%;
     border-radius: 5px;
-    font-family: "Century Gothic", "Helvetica Neue";
+    font-family: "Century Gothic";
     font-size: 1em;
 }
 input[type=submit]:hover {
@@ -134,13 +93,9 @@ input[type=checkbox]{
 
 /*FOOTER*/
 footer{
-    /*position: fixed;
-    bottom: 0;*/
     background-color: rgb(26,26,26);
     color: white;
-    height:20em;
-    width:100%;
-    font-family: "Gill Sans";
+    font-family: "gillsans";
 }
 
 footer a{
