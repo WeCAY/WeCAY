@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/account.css" />
+</head>
+<body>
 <?php
 	/*
 	On se connecte à la base de données
@@ -19,6 +26,7 @@
 			$_SESSION['session']=1;
 			$_SESSION['id'] = $identifiant;
 			$_SESSION['password'] = $password;
+            echo '<div class = "loader"></div>';
 			echo "<p> Vous êtes connectés ! </p>";
 
 			$_SESSION['connecte']=1; // L'utilisateur est connecté
@@ -48,3 +56,7 @@
 		return false;
 	} 	
 ?>
+
+
+</body>
+</html>

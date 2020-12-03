@@ -16,7 +16,7 @@
                         <h1>Mot de passe oublié</h1>
 
                         <label>Nom d'utilisateur</label>
-                        <input type="text" placeholder="Entrez votre nom d'utilisateur" name="username" required>
+                        <input type="text" placeholder="Entrez votre numéro de sécurité sociale" name="secu_number" required>
                         <br>
                         <br>
                         <label>Adresse mail</label>

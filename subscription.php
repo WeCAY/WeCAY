@@ -19,6 +19,7 @@ Si on appuie sur le boutton, la fonction inscription() est exécutée.
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="CSS/subscription.css" />
+        <script type="text/javascript" src="js/pw_security_lvl.js"></script>
         <title>Inscription | WeCAY</title>
     </head>
 
@@ -79,11 +80,11 @@ Si on appuie sur le boutton, la fonction inscription() est exécutée.
                             <label>Mot de passe</label>
                             <?php
                                 if(empty($_POST['inscripton']) || $_POST['erreur']!='erreurID'){
-                                    echo '<input type="password" placeholder="Entrer le mot de passe" name="password" required>';
+                                    echo '<input type="password" placeholder="Entrer le mot de passe" name="password" id="mdp" OnKeyDown="Check();" required>';
                                 }
                                 else{
                                     $mot_de_passe=$_POST['firstname'];
-                                    echo '<input type="password" placeholder="Entrer le mot de passe" name="password" required>';
+                                    echo '<input type="password" placeholder="Entrer le mot de passe" name="password" id="mdp" OnKeyDown="Check();" required>';
                                 }
                             ?>
 

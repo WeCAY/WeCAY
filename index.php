@@ -26,6 +26,9 @@ sur la page connexion et de mot de passe oublié
     <?php
     include("constant/header.php");
     ?>
+    <script>
+
+    </script>
 
     <section>
         <div id="container">
@@ -49,15 +52,16 @@ sur la page connexion et de mot de passe oublié
                     <label for="souvenir" class="souvenir">Se souvenir de moi</label>
                     <br>
                     <br>
+
                     <?php
 
                     if (isset($_POST['login']) && !empty($_POST['login'])) {
                         connectAccount();
                     }
-                    echo '<div id = "bottom">';
+
                     echo '<p>Pas encore inscrit ? <a href="subscription.php">Créer un compte</a></p>';
                     echo '<p><a href="forgot_pw.php"> Mot de passe oublié</a></p>';
-                    echo '</div>';
+
 
                     ?>
 

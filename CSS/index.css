@@ -78,15 +78,28 @@ input[type=submit] {
     font-family: "Century Gothic";
     font-size: 1em;
 }
+
 input[type=submit]:hover {
     background-color: white;
     color: #ff5757;
-
 }
+
+input[type=submit]{
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+section input[type=submit]:hover{
+    background-color: white;
+    color: dodgerblue;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
 label{
     float:left;
 
 }
+
 input[type=checkbox]{
     float:left;
 }
@@ -140,13 +153,28 @@ footer #block1 #centred{
 }
 .reseaux{
     width: 12%;
-    padding: 2% 5% 0 0 ;
+    margin: 2% 5% 0 0 ;
+}
+
+.reseaux {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease ;
+    -ms-transition:all 0.5s ease ;
+    -o-transition:all 0.5s ease ;
+    transition: all 0.5s ease;
+}
+
+.reseaux:hover {
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+    transform: scale(1.15);
 }
 
 footer h1{
     font-size: 1.1em;
     font-weight: normal;
-
 }
 
 footer #block2{
