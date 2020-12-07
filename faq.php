@@ -34,8 +34,9 @@ session_start();
             echo showFaq();
         ?>
 
-        <?php include("constant/footer.php"); ?>
+
     </div>
+    <?php include("constant/footer.php"); ?>
 </body>
 
 </html>

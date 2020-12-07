@@ -240,7 +240,9 @@ footer > #largeurPage{
     display: none;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
+    
+
     footer #block1{
         display: flex;
         justify-content: left;

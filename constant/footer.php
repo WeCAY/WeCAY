@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="footer.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/index.css" />
     <script rel="script" type="text/javascript" src="js/footer.js"></script>
     <title>Accueil | WeCAY</title>
 </head>
