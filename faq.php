@@ -16,7 +16,7 @@ session_start();
 <html lang="fr">
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="CSS/principal.css" />
+    <link rel="stylesheet" href="CSS/faq.css" />
     <title>Accueil | WeCAY</title>
     <?php
        // echo getNavigation();
@@ -29,7 +29,7 @@ session_start();
             //include("./database/connect.php"); 
         ?>
 
-
+        <p><B>Foire aux questions</B></p>
         <?php
             echo showFaq();
         ?>

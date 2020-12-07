@@ -15,23 +15,19 @@
 		$sth->execute();
 
 		echo "<table>";
-		echo "<tr>";
-		echo "<th>Questions</th>";
-		echo "</tr>";
 		$lign=0;
 		while($result= $sth->fetch(PDO::FETCH_ASSOC)){
 			if($lign==0){
 				echo"<tr>";
 			}
 			echo "<td>";
-			echo "<div>Numéro : ".$result['id_question']."</div>";
-			echo "<div>Intitulé : ".$result['intitule']."</div>";
-			echo "<div>Réponse : ".$result['reponse']."</div>";
+			echo "<div><U>Intitulé :</U> ".$result['intitule']."</div>";
+			echo "<div><U>Réponse :</U> ".$result['reponse']."</div>";
 			echo "</td>";
-			if($lign==2){
+			$lign++;
+			if($lign==3){
 				echo "</tr>";$lign=0;
 			}
-			$lign++;
 		}
 		echo "</table>";	
 	} 
