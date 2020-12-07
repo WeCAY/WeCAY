@@ -81,7 +81,7 @@ input[type=text], input[type=email], input[type=date], select, input[type=passwo
     border-radius: 5px;
 }
 
-input[type=submit] {
+section input[type=submit]{
     background-color: lightskyblue;
     color: white;
     padding: 14px 18px;
@@ -116,13 +116,10 @@ label{
 
 /*FOOTER*/
 footer{
-    /*position: fixed;
-    bottom: 0;*/
     background-color: rgb(26,26,26);
     color: white;
-    height:20em;
-    width:100%;
-    font-family: "Gill Sans";
+    font-family: "gillsans";
+
 }
 
 footer a{
@@ -166,8 +163,9 @@ footer #block1 #centred{
     /*padding-left: 5%;*/
 }
 .reseaux{
-    width: 12%;
-    padding: 2% 5% 0 0 ;
+    width: 40px;
+    margin: 2% 5% 0 0 ;
+
 }
 
 .reseaux {
@@ -189,18 +187,21 @@ footer #block1 #centred{
 footer h1{
     font-size: 1.1em;
     font-weight: normal;
-
 }
 
 footer #block2{
     display: flex;
     justify-content: left;
-    flex-direction: column;
+    flex-direction: row;
+    padding-left: 10%;
+}
+
+footer #news{
     padding-left: 10%;
 }
 
 footer #block2 input[type=email]{
-    width: 20%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -210,16 +211,96 @@ footer #block2 input[type=email]{
 }
 
 footer label{
-    width: 30%;
+    width: 25%;
 }
+
+#block2 label{
+    padding-top: 6px;
+}
+
+footer input[type=submit] {
+    background-color: lightskyblue;
+    color: white;
+    margin: 8px 0;
+    border: 1px solid lightskyblue;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Century Gothic";
+    font-size: 90%;
+}
+
 #newsletter{
     display: flex;
     flex-direction: row;
+    height: 50px;
+    padding-left: 2%;
 }
 
 #subscribe{
-    width: 10%;
+    width: 120px;
     border-radius: 0 5px 5px 0;
+    height: 34px;
+}
+hr{
+    width: 50%;
+    margin-inline-start: 0 ;
+}
+
+footer > #largeurPage{
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    footer #block1{
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+    footer #block1 #gauche, footer #block1 #centred, footer #block1 #centreg, footer #block1 #droite{
+        width: 100%;
+        text-align: left;
+    }
+
+    footer #block1 #gauche{
+        margin:0;
+    }
+
+
+    h1:hover{
+        color:grey;
+    }
+
+    footer > #block1 > #gauche > .text1{
+        display: none;
+    }
+
+    footer > #block1 > #centreg > .text2{
+        display: none;
+    }
+
+    footer #block2{
+        display: flex;
+        flex-direction: column;
+        padding-right: 10%;
+    }
+
+    footer #block2 input[type=email]{
+        width: 200px;
+    }
+
+    footer #block2 label{
+        width: 100%;
+    }
+    .reseaux{
+        margin: 0;
+    }
+
+    footer #newsletter{
+        padding-left: 0%;
+
+    }
 }
 
 /*FIN FOOTER*/
