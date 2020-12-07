@@ -1,0 +1,201 @@
+/*POLICES*/
+@font-face {
+    font-family:'Century Gothic';
+    src: url("../police/gothic.ttf");
+}
+@font-face {
+    font-family: 'Optima';
+    src: url("../police/unicode.optima.ttf");
+}
+@font-face {
+    font-family: 'gillsans';
+    src: url("../police/gillsans.ttf");
+}
+/*FIN POLICES */
+
+
+/*BODY*/
+body{
+    margin:auto;
+    padding:auto;
+    background: linear-gradient(lightskyblue, white);
+}
+a{
+    color: black;
+}
+a:hover{
+    color: #ff5757;
+}
+table{
+    display : flex;
+    justify-content : center;
+}
+td{
+    width : 720px;
+    border : 2px solid black; 
+    padding : 1%;
+}
+td div{
+    margin-top : 1%;
+    margin-bottom : 1%;
+}
+p{
+    text-align : center;
+    font-size : 2em;
+}
+/*FIN BODY*/
+
+
+/*LE HEADER*/
+#titre_principal{
+    display: flex;
+    justify-content: center;
+}
+.logoFlottant{
+    width:12em;
+}
+/*FIN DU HEADER*/
+
+/* Set a style for all buttons */
+input[type=submit] {
+    background-color: lightskyblue;
+    color: white;
+    padding: 14px 18px;
+    margin: 8px 0;
+    border: 1px solid lightskyblue;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-family: "Century Gothic";
+    font-size: 1em;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: #ff5757;
+}
+
+input[type=submit]{
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+section input[type=submit]:hover{
+    background-color: white;
+    color: dodgerblue;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+label{
+    float:left;
+
+}
+
+input[type=checkbox]{
+    float:left;
+}
+
+/*FOOTER*/
+footer{
+    background-color: rgb(26,26,26);
+    color: white;
+    font-family: "gillsans";
+}
+
+footer a{
+    color:white;
+    text-decoration: none;
+}
+footer a:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+footer #block1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer #block1 #gauche{
+    width:25%;
+    /*padding-left:5%;*/
+    margin-left: 10%;
+    text-align: left;
+    font-size: 1em;
+}
+footer #block1 #droite{
+    width:25%;
+    /*padding-left: 5%;*/
+    text-align: left;
+    font-size: 1em;
+}
+
+footer #block1 #centreg{
+    width:25%;
+    /*padding-left: 5%;*/
+    text-align: left;
+    font-size: 1em;
+}
+
+footer #block1 #centred{
+    width:25%;
+    /*padding-left: 5%;*/
+}
+.reseaux{
+    width: 12%;
+    margin: 2% 5% 0 0 ;
+}
+
+.reseaux {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease ;
+    -ms-transition:all 0.5s ease ;
+    -o-transition:all 0.5s ease ;
+    transition: all 0.5s ease;
+}
+
+.reseaux:hover {
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+    transform: scale(1.15);
+}
+
+footer h1{
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
+footer #block2{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding-left: 10%;
+}
+
+footer #block2 input[type=email]{
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px 0 0 5px;
+}
+
+footer label{
+    width: 30%;
+}
+#newsletter{
+    display: flex;
+    flex-direction: row;
+}
+
+#subscribe{
+    width: 10%;
+    border-radius: 0 5px 5px 0;
+}
+
+/*FIN FOOTER*/
