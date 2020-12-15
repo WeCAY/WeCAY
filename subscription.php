@@ -1,8 +1,10 @@
 <?php
     require_once "./functions/functions_subscription.php";
+    $confmail = false;
+    $confpw = false;
 
-    if(isset($_POST['inscription'])){
-        inscription();      
+    if(isset($_POST['inscription']) && $confmail && $confpw){
+        inscription();
     }   
     
 
@@ -69,12 +71,20 @@ Si on appuie sur le boutton, la fonction inscription() est exécutée.
 
                             <label>Confirmez votre adresse mail</label>
                             <?php
+                                if(isset($_POST['mail'],$_POST['mail2']) && ($_POST['mail']===$_POST['mail2'])){
+                                    $confmail = true;
+                                }
+                                else if (isset($_POST['mail'],$_POST['mail2']) && ($_POST['mail']!==$_POST['mail2'])){
+                                    echo "<label>L'adresse mail n'est pas confirmée !</label>";
+                                    $confmail = false;
+                                }
                                 if(empty($_POST['inscripton']) || $_POST['erreur']!='erreurID'){
                                     echo '<input type="email" placeholder="adresse.mail@wecay.com" name="mail2" required>';
                                 }
                                 else{
                                     echo '<input type="email" placeholder="adresse.mail@wecay.com" name="mail2" required>';
                                 }
+
                             ?>
 
                             <label>Mot de passe</label>
@@ -90,12 +100,20 @@ Si on appuie sur le boutton, la fonction inscription() est exécutée.
 
                             <label>Confirmer votre mot de passe</label>
                             <?php
+                                if(isset($_POST['password'],$_POST['password2']) && ($_POST['password']===$_POST['password2'])){
+                                    $confpw = true;
+                                }
+                                else if (isset($_POST['password'],$_POST['password2']) && ($_POST['password']!==$_POST['password2'])){
+                                    echo "<label>Le mot de passe n'est pas confirmée !</label>";
+                                    $confpw = false;
+                                }
                                 if(empty($_POST['inscripton']) || $_POST['erreur']!='erreurID'){
                                     echo '<input type="password" placeholder="Entrer le mot de passe" name="password2" required>';
                                 }
                                 else{
                                     echo '<input type="password" placeholder="Entrer le mot de passe" name="password2" required>';
                                 }
+
                             ?>
 
                             <label>Civilité</label>
@@ -118,13 +136,20 @@ Si on appuie sur le boutton, la fonction inscription() est exécutée.
 
                             <label>Statut</label>
                             <?php
-                                if(empty($_POST['inscripton']) || $_POST['erreur']!='erreurID'){
-                                    echo '<input type="text" placeholder="Statut" name="statut" required>';
-                                }
-                                else{
-                                    $statut=$_POST['statut'];
-                                    echo '<input type="text" placeholder="Statut" name="statut" required>';
-                                }
+                            if(empty($_POST['inscripton']) || $_POST['erreur']!='erreurID'){
+                                echo'<select name="statut" required>',"\n";
+                                echo '<option>Médecin</option>';
+                                echo '<option>Patient</option>';
+                                echo '<option>Administrateur</option>';
+                                echo '</select>';
+                            }else{
+                                $civilite=$_POST['statut'];
+                                echo'<select name="select_box" required>',"\n";
+                                echo '<option>Médecin</option>';
+                                echo '<option>Patient</option>';
+                                echo '<option>Administrateur</option>';
+                                echo '</select>';
+                            }
                             ?>
 
                             <label>Date de naissance</label>

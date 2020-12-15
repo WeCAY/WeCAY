@@ -18,6 +18,7 @@ sur la page connexion et de mot de passe oublié
     <meta charset="utf-8" />
     <link rel="stylesheet" href="CSS/index.css" />
     <script type="text/javascript" src="js/show_pw.js"></script>
+    <script type="text/javascript" src="js/hide_mail.js"></script>
     <title>Accueil | WeCAY</title>
 </head>
 

@@ -43,13 +43,16 @@
 	Cette fonction vérifie que le mot de passe corespond à l'identifiant
     */
 	function checkAccount($req,$mdp){
+
 		$dbconn=connectDb();
 		$sth=$dbconn->prepare($req);
 		$sth->execute();
 		$idmax=0;
 		$result= $sth->fetchAll(PDO::FETCH_COLUMN,0);
-		foreach ($result as $key) {		
-				if($mdp==$key){
+		foreach ($result as $key) {
+
+				if(password_verify($mdp,$key)){
+
 					return true;
 				}			
 		}
