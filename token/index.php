@@ -21,7 +21,7 @@ if(isset($_GET['token']) && $_GET['token'] !='')
         </head>
         <body>
         <div id="bloc_page">
-            <?php include("../constant/header.php"); ?>
+            <?php include("./constant/header.php"); ?>
 
             <section>
                 <div id="container">
@@ -47,7 +47,7 @@ if(isset($_GET['token']) && $_GET['token'] !='')
                 </div>
             </section>
 
-            <?php include("../constant/footer.php"); ?>
+            <?php include("./constant/footer.php"); ?>
         </div>
         </body>
         </html>
