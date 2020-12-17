@@ -15,19 +15,21 @@ session_start();
 
 <!DOCTYPE html>
 <html lang="fr">
+<script src="https://d3js.org/d3.v4.js"></script>
+
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="CSS/principal.css" />
     <title>Accueil | WeCAY</title>
-
 </head>
 
 <body>
 <div id="bloc_page">
-    <?php
-    include("constant/header.php");
-    //echo getNavigation();
+    <?php include("constant/header.php");
+    include("functions/creation_csv_temp.php");
+    include("functions/creation_csv_pouls.php");
     ?>
+
     <h1>Suivi médical</h1>
 
     <?php
@@ -70,6 +72,14 @@ session_start();
         showResult($req);
     }
     ?>
+    <h3>Température vs date </h3>
+    <div id="my_dataviz">
+        <?php include("js/graph_temp.php")?>
+    </div>
+    <h3>Pouls vs date </h3>
+    <div id="my_dataviz2">
+        <?php include("js/graph_pouls.php")?>
+    </div>
 
 
 
