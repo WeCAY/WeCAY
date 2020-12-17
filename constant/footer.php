@@ -24,10 +24,10 @@
         </div>
         <div id="centred">
             <h1 id="title3">SUIVEZ-NOUS</h1>
-            <a href="https://www.instagram.com"><img src="./image/instagram.png" class="reseaux" alt="Logo Instagram" /></a>
-            <a href="https://www.facebook.com"><img src="./image/facebook.png" class="reseaux" alt="Logo Facebook" /></a>
-            <a href="https://www.twitter.com"><img src="./image/twitter.png" class="reseaux" alt="Logo Twitter" /></a>
-            <a href="https://www.linkedin.com"><img src="./image/linkedin.png" class="reseaux" alt="Logo Linkedin" /></a>
+            <a href="https://www.instagram.com"><img src="../image/instagram.png" class="reseaux" alt="Logo Instagram" /></a>
+            <a href="https://www.facebook.com"><img src="../image/facebook.png" class="reseaux" alt="Logo Facebook" /></a>
+            <a href="https://www.twitter.com"><img src="../image/twitter.png" class="reseaux" alt="Logo Twitter" /></a>
+            <a href="https://www.linkedin.com"><img src="../image/linkedin.png" class="reseaux" alt="Logo Linkedin" /></a>
         </div>
         <div id="droite">
             <h1>©2020 WeCAY, France</h1>

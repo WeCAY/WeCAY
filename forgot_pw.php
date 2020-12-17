@@ -29,7 +29,7 @@
                             $url = "http://wecay.alwaysdata.net/token?token=$token";
 
                             $message = "Cliquez sur le lien pour réinitialiser votre mot de passe : $url";
-                            $headers = 'Content-Type: text/plains; charset="utf-8"'." ";
+                            $headers = 'Content-Type: text/plain; charset="utf-8"'." ";
 
                             if(mail($_POST['mail'], 'Mot de passe oublié', $message, $headers))
                             {

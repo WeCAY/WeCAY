@@ -17,11 +17,12 @@ if(isset($_GET['token']) && $_GET['token'] !='')
         <head>
             <meta charset="utf-8" />
             <link rel="stylesheet" href="../CSS/index.css" />
-            <title>Mot de passe oublié | WeCAY</title>
+            <link rel="stylesheet" href="../CSS/account.css" />
+            <title>Réinitialiser le mot de passe | WeCAY</title>
         </head>
         <body>
         <div id="bloc_page">
-            <?php include("./constant/header.php"); ?>
+            <?php include("../constant/header.php"); ?>
 
             <section>
                 <div id="container">
@@ -40,14 +41,17 @@ if(isset($_GET['token']) && $_GET['token'] !='')
                             $db = connectDb();
                             $stmt = $db->prepare($sql);
                             $stmt->execute([$hashedPassword, $email]);
-                            echo 'Votre mot de passe a été modifié avec succès !';
+                            echo '<p>Votre mot de passe a été modifié avec succès !</p>';
+                            echo '<div class = "loader"></div>';
+                            echo '<p> Vous allez être redirigé vers la page principale. </p>';
+                            header('Refresh: 3;URL=../index.php',true, 301);
                             }?>
                         </form>
                     </div>
                 </div>
             </section>
 
-            <?php include("./constant/footer.php"); ?>
+            <?php include("../constant/footer.php"); ?>
         </div>
         </body>
         </html>
