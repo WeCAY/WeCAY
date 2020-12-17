@@ -10,7 +10,7 @@
 		$nom=$_POST['name'];
 		$prenom=$_POST['firstname'];
 		$email=$_POST['mail'];
-        $mot_de_passe=$_POST['password'];
+        $mot_de_passe=password_hash($_POST['password'],PASSWORD_DEFAULT);
         $statut=$_POST['statut'];
 		$civilite=$_POST['select_box'];
 		$date_naissance=$_POST['date_birth'];
@@ -76,7 +76,4 @@
 		}
 		return true;
 	}
-
-
-
 ?>

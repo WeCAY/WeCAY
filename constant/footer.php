@@ -2,8 +2,8 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="CSS/index.css" />
-    <script rel="script" type="text/javascript" src="js/footer.js"></script>
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
+    <script rel="script" type="text/javascript" src="./js/footer.js"></script>
     <title>Accueil | WeCAY</title>
 </head>
 
@@ -13,21 +13,21 @@
         <div id="gauche">
             <h1 onclick="montrer1()">INFORMATIONS PRATIQUES</h1>
             <hr>
-            <p class="text1"><a href="administratif/mentions_legales.pdf">Mentions légales</a></p>
+            <p class="text1"><a href="../administratif/mentions_legales.pdf">Mentions légales</a></p>
             <p class="text1"><a href="protection.html">Protection des données</a></p>
         </div>
         <div id="centreg">
             <h1 onclick="montrer2()">SERVICE CLIENT</h1>
             <hr>
             <p class="text2"><a href="mailto:contact@wecay.fr">Nous contacter</a></p>
-            <p class="text2"><a href="faq.php">FAQ</a></p>
+            <p class="text2"><a href="./faq.php">FAQ</a></p>
         </div>
         <div id="centred">
             <h1 id="title3">SUIVEZ-NOUS</h1>
-            <a href="https://www.instagram.com"><img src="image/instagram.png" class="reseaux" alt="Logo Instagram" /></a>
-            <a href="https://www.facebook.com"><img src="image/facebook.png" class="reseaux" alt="Logo Facebook" /></a>
-            <a href="https://www.twitter.com"><img src="image/twitter.png" class="reseaux" alt="Logo Twitter" /></a>
-            <a href="https://www.linkedin.com"><img src="image/linkedin.png" class="reseaux" alt="Logo Linkedin" /></a>
+            <a href="https://www.instagram.com"><img src="./image/instagram.png" class="reseaux" alt="Logo Instagram" /></a>
+            <a href="https://www.facebook.com"><img src="./image/facebook.png" class="reseaux" alt="Logo Facebook" /></a>
+            <a href="https://www.twitter.com"><img src="./image/twitter.png" class="reseaux" alt="Logo Twitter" /></a>
+            <a href="https://www.linkedin.com"><img src="./image/linkedin.png" class="reseaux" alt="Logo Linkedin" /></a>
         </div>
         <div id="droite">
             <h1>©2020 WeCAY, France</h1>

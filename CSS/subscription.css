@@ -250,7 +250,15 @@ footer > #largeurPage{
     display: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width:1000px) {
+
+    #formulaire {
+        width: 70%;
+    }
+
+    body{
+        font-size: 2em;
+    }
 
     footer #block1{
         display: flex;
@@ -268,9 +276,8 @@ footer > #largeurPage{
         margin:0;
     }
 
-
-    h1:hover{
-        color:grey;
+    footer h1:hover{
+        color: grey;
     }
 
     footer > #block1 > #gauche > .text1{
@@ -289,19 +296,30 @@ footer > #largeurPage{
 
     footer #block2 input[type=email]{
         width: 200px;
+        height: 40px;
+    }
+
+    footer #block2 input[type=submit]{
+        height: 40px;
+        width: 155px;
+        font-size: 0.7em;
     }
 
     footer #block2 label{
         width: 100%;
     }
+
     .reseaux{
-        margin: 0;
+        /*margin: 0 0 0 50px;*/
+        width: 80px;
+
     }
 
     footer #newsletter{
         padding-left: 0%;
+        margin-bottom: 20px;
 
     }
-}
 
+}
 /*FIN FOOTER*/
