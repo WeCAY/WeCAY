@@ -3,21 +3,22 @@
 /*
 On se connecte à la base de données
 */
-//require_once "./database/connect.php";
+require_once "./database/connect.php";
 
 
 /*
 Fonction qui gère le menu de navigation selon l'utilisateur
 */
-/*	function getNavigation(){
+	function getNavigation(){
 
 		$result = '<div>';
 		if(isset($_SESSION['session']) && $_SESSION['session']==1){ //case when yo're connected
 			$result .= '<div><nav><a href="./database/deconnect.php">Déconnexion</a></nav></div>';
+            $result .= '<div><nav><a href="./parameters.php">Modifier mes informations</a></nav></div>';
 		}
 		$result .= '<div>';
-		$result .= '<nav>';
-*/
+//		$result .= '<nav>';
+
 /*		if(isset($_SESSION['session']) && $_SESSION['statut']=="Admin" && $_SESSION['session']==1){ //case when yo're connected
 			$result .= '<a href="./admin.php">Admin</a>';
 			$result .= '<a href="./access.php">Gérer les droits utilisateurs</a>';
@@ -36,9 +37,9 @@ Fonction qui gère le menu de navigation selon l'utilisateur
 //		$result .= '</div>';
 //		$result .= '</div>';
 
-//		return $result;
+		return $result;
 
-//	}
+}
 
 
 /*

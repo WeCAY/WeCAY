@@ -27,7 +27,7 @@ function connectAccount() {
         $_SESSION['id'] = $identifiant;
         $_SESSION['password'] = $password;
         echo '<div class = "loader"></div>';
-        echo "<p> Vous êtes connectés ! </p>";
+        echo "<p> Vous êtes connecté ! </p>";
 
         $_SESSION['connecte']=1; // L'utilisateur est connecté
 

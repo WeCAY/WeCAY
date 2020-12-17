@@ -28,6 +28,7 @@ session_start();
     <?php include("constant/header.php");
     include("functions/creation_csv_temp.php");
     include("functions/creation_csv_pouls.php");
+    echo getNavigation();
     ?>
 
     <h1>Suivi médical</h1>

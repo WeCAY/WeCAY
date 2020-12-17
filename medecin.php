@@ -17,7 +17,7 @@ session_start();
 <html lang="fr">
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="CSS/principale.css" />
+    <link rel="stylesheet" href="CSS/principal.css" />
     <title>Accueil | WeCAY</title>
     <?php
         //echo getNavigation();
@@ -28,6 +28,7 @@ session_start();
     <div id="bloc_page">
         <?php 
             include("constant/header.php");
+            echo getNavigation();
         ?>
         <h1>Page médecin</h1>
 
@@ -73,7 +74,7 @@ session_start();
             if(isset($_POST['bouton'])){
                 triPatient();   
             }else{
-                $req = ("SELECT * from utilisateur INNER JOIN tests ON num_securite_social = num_securite_social WHERE statut LIKE 'Patient' ASC");
+                $req = ("SELECT * from utilisateur INNER JOIN tests ON utilisateur.num_securite_social = tests.num_securite_social WHERE statut LIKE 'Patient'");
                 showPatient($req);
             }
         ?>
