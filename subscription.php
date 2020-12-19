@@ -25,10 +25,12 @@ Si on appuie sur le boutton, la fonction inscription() est exécutée.
 
 <body>
 <div id = "block_page">
+    <a name = "haut"></a>
     <?php
     include("constant/header.php");
     ?>
     <section>
+        <a href ="#haut"><img src="image/next.png" class="haut" alt="Remontez en haut de la page"></a>
         <div id="formulaire">
             <div id="renseignement">
                 <form action="#" method="post"> <!--action="verification.php"-->

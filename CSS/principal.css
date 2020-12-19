@@ -19,6 +19,7 @@ body{
     margin:auto;
     padding:auto;
     background: linear-gradient(lightskyblue, white);
+    width:100%;
 }
 #bloc_page{
     width:100%;
@@ -82,9 +83,14 @@ section input[type=submit]:hover{
 footer{
     background-color: rgb(26,26,26);
     color: white;
-    font-family: "gillsans";
+    font-family: "gillsans", "Century Gothic";
 
 }
+footer .fleche{
+    display: none;
+    width: 30px;
+}
+
 
 footer a{
     color:white;
@@ -214,7 +220,15 @@ footer > #largeurPage{
     display: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width:1000px) {
+
+    #container {
+        width: 70%;
+    }
+
+    body{
+        font-size: 2em;
+    }
 
     footer #block1{
         display: flex;
@@ -232,9 +246,11 @@ footer > #largeurPage{
         margin:0;
     }
 
-
-    h1:hover{
-        color:grey;
+    footer .fleche{
+        margin-top: 25px;
+        margin-right: 5px;
+        display: flex;
+        float: left;
     }
 
     footer > #block1 > #gauche > .text1{
@@ -253,19 +269,31 @@ footer > #largeurPage{
 
     footer #block2 input[type=email]{
         width: 200px;
+        height: 40px;
+    }
+
+    footer #block2 input[type=submit]{
+        height: 40px;
+        width: 155px;
+        font-size: 0.7em;
     }
 
     footer #block2 label{
         width: 100%;
     }
+
     .reseaux{
-        margin: 0;
+        /*margin: 0 0 0 50px;*/
+        width: 80px;
+
     }
 
     footer #newsletter{
         padding-left: 0%;
+        margin-bottom: 20px;
 
     }
+
 }
 
 /*FIN FOOTER*/

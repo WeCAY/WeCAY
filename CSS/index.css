@@ -14,6 +14,7 @@
 /*FIN POLICES */
 
 
+
 /*BODY*/
 body{
     margin:auto;
@@ -45,6 +46,9 @@ section {
     display:flex;
     justify-content: center;
 }
+
+
+
 #container{
     width:30%;
     font-family: "Optima";
@@ -110,6 +114,11 @@ footer{
     font-family: "gillsans", "Century Gothic";
 
 }
+footer .fleche{
+    display: none;
+    width: 30px;
+}
+
 
 footer a{
     color:white;
@@ -265,8 +274,11 @@ footer > #largeurPage{
         margin:0;
     }
 
-    footer h1:hover{
-        color: grey;
+    footer .fleche{
+        margin-top: 25px;
+        margin-right: 5px;
+        display: flex;
+        float: left;
     }
 
     footer > #block1 > #gauche > .text1{

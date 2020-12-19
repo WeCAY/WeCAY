@@ -12,7 +12,7 @@ On se connecte à la base de données
 require_once "./database/connect.php";
 
 /*
-Fonction qui permet de se connacter au site en insérant le num de secu et le mot de passe
+Fonction qui permet de se connecter au site en insérant le num de secu et le mot de passe
 vérifie si les données du formulaires sont présentes dans la base.
 Renvoie vers la page principale si ok , erreur sinon.
 */

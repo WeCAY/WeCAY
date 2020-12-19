@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
+
     <script rel="script" type="text/javascript" src="./js/footer.js"></script>
     <title>Accueil | WeCAY</title>
 </head>
@@ -11,12 +11,14 @@
     <div id="largeurPage">0</div>
     <div id = "block1">
         <div id="gauche">
+            <img src="../image/next-2.png" class="fleche">
             <h1 onclick="montrer1()">INFORMATIONS PRATIQUES</h1>
             <hr>
             <p class="text1"><a href="../administratif/mentions_legales.pdf">Mentions légales</a></p>
             <p class="text1"><a href="protection.html">Protection des données</a></p>
         </div>
         <div id="centreg">
+            <img src="../image/next-2.png" class="fleche">
             <h1 onclick="montrer2()">SERVICE CLIENT</h1>
             <hr>
             <p class="text2"><a href="mailto:contact@wecay.fr">Nous contacter</a></p>

@@ -58,6 +58,14 @@ section {
     justify-content: center;
 }
 
+.haut{
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    transform: rotate(-90deg);
+    width: 40px;
+}
+
 #formulaire{
     width:30%;
     font-family: "Optima";
@@ -118,9 +126,14 @@ label{
 footer{
     background-color: rgb(26,26,26);
     color: white;
-    font-family: "gillsans";
+    font-family: "gillsans", "Century Gothic";
 
 }
+footer .fleche{
+    display: none;
+    width: 30px;
+}
+
 
 footer a{
     color:white;
@@ -252,7 +265,7 @@ footer > #largeurPage{
 
 @media (max-width:1000px) {
 
-    #formulaire {
+    #container {
         width: 70%;
     }
 
@@ -276,8 +289,11 @@ footer > #largeurPage{
         margin:0;
     }
 
-    footer h1:hover{
-        color: grey;
+    footer .fleche{
+        margin-top: 25px;
+        margin-right: 5px;
+        display: flex;
+        float: left;
     }
 
     footer > #block1 > #gauche > .text1{
@@ -322,4 +338,5 @@ footer > #largeurPage{
     }
 
 }
+
 /*FIN FOOTER*/
