@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'gillsans';
+    src: url("../police/gillsans.ttf");
+}
+
+.graph table{
+    /*border-collapse: collapse;*/
+    border-radius: 10px;
+    border-color: rgb(26,26,26);
+    overflow: hidden;
+    font-family: 'gillsans';
+    border-style: solid;
+    background-color: rgb(26,26,26);
+}
+
+.graph table th{
+    font-weight: normal;
+    color: orange;
+    border-bottom-style: solid;
+    border-bottom-color: gold;
+    border-bottom-width: thin;
+}
+.graph table td{
+    color: white;
+    text-align: center;
+}

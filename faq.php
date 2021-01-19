@@ -1,6 +1,7 @@
 <?php
 
 require_once "./functions/functions_faq.php";
+require_once "./database/connect.php";
 
 session_start();
 
@@ -17,7 +18,9 @@ session_start();
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="CSS/faq.css" />
+    <script rel="script" type="text/javascript" src="./js/derouler.js"></script>
     <title>Accueil | WeCAY</title>
+
     <?php
        // echo getNavigation();
     ?>
@@ -25,12 +28,11 @@ session_start();
 
 <body>
     <div id="bloc_page">
-        <?php include("constant/header.php");
-            //include("./database/connect.php"); 
-        ?>
+        <?php include("constant/header.php");?>
 
-        <p><B>Foire aux questions</B></p>
+        <h1>Foire aux questions</h1>
         <?php
+            echo show_nav_faq();
             echo showFaq();
         ?>
 

@@ -52,7 +52,7 @@ header{
 
 /*SECTION*/
 section {
-    text-align:center;
+
     margin-bottom: 5%;
     display:flex;
     justify-content: center;
@@ -67,19 +67,25 @@ section {
 }
 
 #formulaire{
-    width:30%;
+    width:40%;
     font-family: "Optima";
+    padding: 15px;
+    background-color: rgb(26,26,26);
+    border-radius: 10px;
+    color: white;
 }
 
 #formulaire h1{
     margin: auto;
     padding-bottom: 10px;
     font-size: 2.5em;
+    border-bottom-style: solid;
+    border-bottom-color: gold;
 
 }
 
 /* Set a style for all buttons */
-input[type=text], input[type=email], input[type=date], select, input[type=password] {
+input[type=text], input[type=email], textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -87,6 +93,10 @@ input[type=text], input[type=email], input[type=date], select, input[type=passwo
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 5px;
+}
+
+textarea{
+    resize: none;
 }
 
 section input[type=submit]{

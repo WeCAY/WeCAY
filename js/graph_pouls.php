@@ -44,7 +44,7 @@ d3.csv("data_pouls.csv",
     svg2.append("path")
         .datum(data)
         .attr("fill", "none")
-        .attr("stroke", "steelblue")
+        .attr("stroke", "orange")
         .attr("stroke-width", 1.5)
         .attr("d", d3.line()
         .x(function(d) { return x(d.date) })

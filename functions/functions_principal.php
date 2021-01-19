@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 /*
 On se connecte à la base de données
@@ -53,7 +53,7 @@ function showAccount($id){
 
     echo "<table>";
     echo "<tr>";
-    echo "<th>Compte</th>";
+    //echo "<th>Compte</th>";
     echo "</tr>";
     $lign=0;
     while($result= $sth->fetch(PDO::FETCH_ASSOC)){
@@ -61,13 +61,34 @@ function showAccount($id){
             echo"<tr>";
         }
         echo "<td>";
-        echo "<div>Nom : ".$result['nom']."  Prenom : ".$result['prenom']."</div>";
-        echo "<div>Adresse mail : ".$result['email']."  Civilité : ".$result['civilite']."</div>";
-        echo "<div>Statut : ".$result['statut']."  Date de naissance : ".$result['date_naissance']."</div>";
-        echo "<div>Lieu de naissance : ".$result['lieu_naissance']."  Numéro de sécurité sociale : ".$result['num_securite_social']."</div>";
-        echo "<div>Adresse : ".$result['adresse']."  Code postal : ".$result['code_postal']."</div>";
-        echo "<div>Ville : ".$result['ville']."</div>";
+
+        if($result['civilite'] === 'M.'){
+            $term = '';
+            $civ = $result['civilite'];
+        } elseif($result['civilite']==='Mme.'){
+            $term = 'e';
+            $civ = $result['civilite'];
+        }elseif($result['civilite']==='Autre'){
+            $term = '-e';
+            $civ = 'Mx.';
+        }
+        echo"<div>".$civ." ".$result['prenom']." ".$result['nom']."</div>";
+
+        $date = $result['date_naissance'];
+        list($annee, $mois, $jour) = explode('-', $date);
+
+        echo"<p>Je suis né".$term." à ".$result['lieu_naissance']." le ".$jour."/".$mois."/".$annee."</p>";
+        echo "<p>Mon numéro de sécurité sociale :<br>".$result['num_securite_social']."</p>";
+        echo"<p>Mon adresse : <br>".$result['adresse']."<br>".$result['code_postal']." ".$result['ville']."</p>";
+        echo"<p>Mon adresse mail : ".$result['email']."</p>";
+
+
         echo "</td>";
+        echo "</td>";
+        $_SESSION['nom'] = $result['nom'];
+        $_SESSION['prenom'] = $result['prenom'];
+        $_SESSION['mail'] = $result['email'];
+
         if($lign==2){
             echo "</tr>";$lign=0;
         }
@@ -87,37 +108,49 @@ function showAccount($id){
 Cette fonction affiche les informations principales des patients et devra nous faire rediriger vers le suivi du patient qd les graphiques seront bons.
 */
 function showResult($req){
-
+    ?>
+    <link rel="stylesheet" href="CSS/graph.css" />
+    <div class="graph">
+    <?php
     $dbconn=ConnectDb();
     $sth=$dbconn->prepare($req);
     $sth->execute();
 
-    echo "<table width='100%' border=1>";
-    echo "<thead>";
-    echo "<tr>";
-    echo "<th>Numéro</th>";
-    echo "<th>Numéro de sécurité sociale</th>";
-    echo "<th>Date du Test réalisé</th>";
-    echo "<th>Température</th>";
-    echo "<th>Pouls</th>";
-    echo "<th>Machine utilisée</th>";
-    echo "</tr>";
-    echo "</thead>";
-    echo "<tbody>";
+    $nbr = $sth->rowCount();
+    if ($nbr == 0) {
+        echo "Vous n'avez passé aucun examen pour le moment, rendez-vous en centre médical pour tester WeCAY";
+    } else {
+        echo "<table width='100%'>";
+        echo "<thead>";
+        echo "<tr>";
+        echo "<th>Numéro</th>";
+        echo "<th>Numéro de sécurité sociale</th>";
+        echo "<th>Date du Test réalisé</th>";
+        echo "<th>Température</th>";
+        echo "<th>Pouls</th>";
+        echo "<th>Machine utilisée</th>";
+        echo "</tr>";
+        echo "</thead>";
+        echo "<tbody>";
 
-    $lign=0;
-    while($result= $sth->fetch(PDO::FETCH_ASSOC)){
-        echo"<tr>";
-        echo "<td>".$result['id_test']."</td>";
-        echo "<td>".$result['num_securite_social']."</td>";
-        echo "<td>".$result['date_test']."</td>";
-        echo "<td>".$result['temperature']."</td>";
-        echo "<td>".$result['pouls']."</td>";
-        echo "<td>".$result['numero_serie']."</td>";
-        echo"</tr>";
+        $lign=0;
+        while($result= $sth->fetch(PDO::FETCH_ASSOC)){
+            $date = $result['date_test'];
+            list($annee, $mois, $jour) = explode('-', $date);
+
+            echo"<tr>";
+            echo "<td>".$result['id_test']."</td>";
+            echo "<td>".$result['num_securite_social']."</td>";
+            echo "<td>".$jour."/".$mois."/".$annee."</td>";
+            echo "<td>".$result['temperature']."°C"."</td>";
+            echo "<td>".$result['pouls']." bpm"."</td>";
+            echo "<td>".$result['numero_serie']."</td>";
+            echo"</tr>";
+        }
+        echo "</tbody>";
+        echo "</table>";
     }
-    echo "</tbody>";
-    echo "</table>";
+    ?></div><?php
 }
 
 

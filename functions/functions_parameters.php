@@ -28,11 +28,10 @@
 		$dbconn=ConnectDb();
 		$num_securite_social=$_SESSION['id'];
 		if($num_securite_social){
-			$dbconn->exec("UPDATE utilisateur SET nom='$nom',prenom='$prenom',civilite='$civilite', 
-            date_naissance='$date_naissance',adresse='$adresse',code_postal='$code_postal',ville='$ville',
-            lieu_naissance='$lieu_naissance',statut='$statut',email='$email',mot_de_passe='$mot_de_passe'
+			$dbconn->exec("UPDATE utilisateur SET nom='$nom',prenom='$prenom',civilite='$civilite',
+            adresse='$adresse',code_postal='$code_postal',ville='$ville', email='$email'
              WHERE num_securite_social=$num_securite_social;");
-			header('Location: index.php');
+			header('Location: principal.php');
 		}
 	}
 

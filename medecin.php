@@ -28,17 +28,38 @@ session_start();
     <div id="bloc_page">
         <?php 
             include("constant/header.php");
-            echo getNavigation();
+            //echo getNavigation();
         ?>
-        <h1>Page médecin</h1>
+        <h1>Espace médecin</h1>
 
          <div>
         <?php
         //A voir si utile de mettre sur la page du médecin. Pas toutes ses infos mais qques unes.
-            //echo showAccount_medecin($_SESSION['id']);
+            echo showAccount_medecin($_SESSION['id']);
         ?>
         </div>
-
+        <div id="menu">
+            <nav>
+                <ul>
+                    <li><a href="medecin.php">Mon espace personnel</a></li>
+                    <li><a href="#">Rechercher un patient</a></li>
+                    <li class="deroulant"><a href="#">Contact &ensp;</a>
+                        <ul class="sous">
+                            <li><a href="#">Contactez-nous</a></li>
+                            <li><a href="#">Chatbot</a></li>
+                            <li><a href="faq.php">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="deroulant"><a href="#"><?php echo $_SESSION['prenom']." ".$_SESSION['nom']?> &ensp;</a>
+                        <ul class="sous">
+                            <li><a href="./parameters.php">Modifier mes informations</a></li>
+                            <li><a href="#">Paramètres du compte</a></li>
+                            <li><a href="./database/deconnect.php">Déconnexion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     <h2>Patients</h2>
        <article>
             <h3 class="suggest">Recherche d'un patient</h3>
@@ -79,11 +100,12 @@ session_start();
             }
         ?>
         
-        <?php 
-            include("constant/footer.php"); 
-        ?>
+
         
     </div>
+    <?php
+    include("constant/footer.php");
+    ?>
 </body>
 
 </html>

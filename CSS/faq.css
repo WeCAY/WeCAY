@@ -11,6 +11,10 @@
     font-family: 'gillsans';
     src: url("../police/gillsans.ttf");
 }
+@font-face{
+    font-family: 'Avenire';
+    src: url("../police/AvenirLTStd-Book.otf");
+}
 /*FIN POLICES */
 
 
@@ -20,27 +24,70 @@ body{
     background: linear-gradient(lightskyblue, white);
 }
 a{
-    color: black;
+    color: white;
 }
 a:hover{
     color: #ff5757;
 }
+p{
+    font-family: 'Avenire';
+    font-style: normal;
+}
+
+U {
+    font-family: 'Century Gothic';
+    font-weight: bold;
+
+}
 table{
-    display : flex;
-    justify-content : center;
+    border-collapse: collapse;
+    width : 65%;
+    margin-left: 25px;
 }
 td{
-    width : 720px;
-    border : 2px solid black; 
-    padding : 1%;
+    border : 1px solid black;
+    /*padding-left: 1%;
+    padding-right: 1%;*/
+    justify-content: left;
+    padding: 15px;
 }
 td div{
     margin-top : 1%;
     margin-bottom : 1%;
 }
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+nav {
+    margin-right: 20px;
+    overflow: auto;
+    float: right;
+    width: 30%;
+    border-radius: 10px;
+    background-color: rgb(26,26,26);
+    color: white;
+    padding: 10px;
+    position: sticky;
+    top:30px;
+}
+
 #bloc_page > p{
     text-align : center;
     font-size : 2em;
+}
+
+#bloc_page{
+    margin-bottom: 50px;
+}
+#bloc_page h1{
+    text-align: center;
+    font-family: 'Optima';
+    font-size: 2.5em;
+}
+table img{
+    transform: rotate(180deg);
 }
 /*FIN BODY*/
 
@@ -56,6 +103,7 @@ td div{
 /*FIN DU HEADER*/
 
 /* Set a style for all buttons */
+
 section input[type=submit] {
     background-color: lightskyblue;
     color: white;
@@ -113,8 +161,7 @@ footer a{
     text-decoration: none;
 }
 footer a:hover{
-    color:white;
-    text-decoration: underline;
+    color:orange;
 }
 
 footer #block1{
@@ -227,9 +274,12 @@ footer input[type=submit] {
     border-radius: 0 5px 5px 0;
     height: 34px;
 }
-hr{
+hr {
+    height: 2px;
     width: 50%;
-    margin-inline-start: 0 ;
+    margin-inline-start: 0;
+    border: none;
+    background-color: orange;
 }
 
 footer > #largeurPage{

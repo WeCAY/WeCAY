@@ -1,6 +1,6 @@
 var text1 = document.getElementsByClassName("text1");
 var text2 = document.getElementsByClassName("text2");
-
+var monprofil = document.getElementById("monprofil");
 
 document.addEventListener('DOMContentLoaded', function () {
     if (window.matchMedia("(max-width: 1000px)").matches) {
@@ -83,3 +83,18 @@ function montrer2(){
     }
 }
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    monprofil.style.display= "block";
+});
+
+function description() {
+
+    if (monprofil.style.display === "none"){
+        monprofil.style.display = "block";
+        document.getElementsByClassName("fleche")[0].style.transform = "rotate(90deg)";
+    } else if (monprofil.style.display === "block"){
+        monprofil.style.display = "none";
+        document.getElementsByClassName("fleche")[0].style.transform = "rotate(180deg)";
+    }
+}

@@ -118,8 +118,7 @@ footer a{
     text-decoration: none;
 }
 footer a:hover{
-    color:white;
-    text-decoration: underline;
+    color:orange;
 }
 
 footer #block1{
@@ -232,9 +231,12 @@ footer input[type=submit] {
     border-radius: 0 5px 5px 0;
     height: 34px;
 }
-hr{
+hr {
+    height: 2px;
     width: 50%;
-    margin-inline-start: 0 ;
+    margin-inline-start: 0;
+    border: none;
+    background-color: orange;
 }
 
 footer > #largeurPage{

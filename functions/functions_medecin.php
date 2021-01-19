@@ -61,6 +61,8 @@ function getNavigation(){
 			}
 			echo "<td>";
 			echo "Nom : ".$result['nom']."  Prenom : ".$result['prenom'];
+            $_SESSION['nom'] = $result['nom'];
+            $_SESSION['prenom'] = $result['prenom'];
 			echo "</td>";
 
 			echo "<td>";
@@ -85,6 +87,7 @@ function getNavigation(){
 			if($lign==2){
 				echo "</tr>";$lign=0;
 			}
+
 			$lign++;
 		}
 		echo "</table>";	
@@ -94,12 +97,15 @@ function getNavigation(){
 	Cette fonction affiche les informations principales des patients et devra nous faire rediriger vers le suivi du patient qd les graphiques seront bons.
 	*/
 	function showPatient($req){
-
+	    ?>
+        <link rel="stylesheet" href="CSS/graph.css" />
+        <div class="graph">
+        <?php
 		$dbconn=ConnectDb();
 		$sth=$dbconn->prepare($req);
 		$sth->execute();
 
-		echo "<table width='100%' border=1>";
+		echo "<table width='100%'>";
 		echo "<thead>";
 		echo "<tr>";
 		echo "<th>Nom</th>";
@@ -127,7 +133,8 @@ function getNavigation(){
 			$lign++;
 		}
 		echo "</tbody>";
-		echo "</table>";	
+		echo "</table>";
+        ?></div><?php
 	}
 
 

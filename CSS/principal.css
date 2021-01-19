@@ -11,6 +11,11 @@
     font-family: 'gillsans';
     src: url("../police/gillsans.ttf");
 }
+
+@font-face{
+    font-family: 'Avenire';
+    src: url("../police/AvenirLTStd-Book.otf");
+}
 /*FIN POLICES */
 
 
@@ -36,6 +41,7 @@ a:hover{
 
 /*LE HEADER*/
 header{
+    margin-top: 30px;
     height: 25%;
     margin-bottom: 0;
 }
@@ -50,6 +56,142 @@ header{
 }
 /*FIN DU HEADER*/
 
+
+/*HEADER2*/
+
+#menu *{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Avenire', sans-serif;
+}
+
+#menu{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+#menu nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(26,26,26);
+    position: sticky;
+    top: 0px;
+}
+
+#menu nav ul{
+    list-style-type: none;
+}
+
+#menu nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+#menu nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#menu nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+#menu nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+
+#menu .sous{
+    display: none;
+    /*box-shadow: 0px 1px 2px #CCC;*/
+    background-color: #333;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+#menu nav > ul li:hover .sous{
+    display: block;
+}
+#menu .sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+#menu .sous a{
+    padding: 10px;
+    border-bottom: none;
+    color: white;
+}
+#menu .sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+#menu .deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+
+/*FIN DU HEADER2*/
+
+#bloc_page h1, h2,h3{
+    font-family: 'Optima';
+}
+#bloc_page img{
+    float: right;
+}
+#bloc_page #titre{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    font-family: 'Optima';
+}
+#bloc_page #titre h1{
+    margin: 0;
+    font-size: 2.5em;
+}
+
+#bloc_page #titre h2{
+    margin: 0;
+    font-weight: normal;
+}
+
+#bloc_page #titre hr{
+    background-color: rgb(26,26,26);
+    margin: 20px auto;
+}
+.profil {
+    margin-right: 20px;
+    overflow: auto;
+    float: right;
+    width: 22%;
+    border-radius: 10px;
+    background-color: rgb(26,26,26);
+    color: white;
+    padding: 10px;
+    position: sticky;
+    top:60px;
+}
+
+.profil hr{
+    width: 100%;
+}
+#box{
+    margin-left: 20px;
+    width: 70%;
+}
+
+#monprofil{
+    font-family: 'gillsans';
+}
 section input[type=submit] {
     background-color: lightskyblue;
     color: white;
@@ -79,11 +221,14 @@ section input[type=submit]:hover{
     transform: scale(1.05);
 }
 
+#graph1, #graph2{
+    margin-left: 20px;
+}
 /*FOOTER*/
 footer{
     background-color: rgb(26,26,26);
     color: white;
-    font-family: "gillsans", "Century Gothic";
+    font-family: "gillsans";
 
 }
 footer .fleche{
@@ -97,8 +242,7 @@ footer a{
     text-decoration: none;
 }
 footer a:hover{
-    color:white;
-    text-decoration: underline;
+    color:orange;
 }
 
 footer #block1{
@@ -211,9 +355,12 @@ footer input[type=submit] {
     border-radius: 0 5px 5px 0;
     height: 34px;
 }
-hr{
+hr {
+    height: 2px;
     width: 50%;
-    margin-inline-start: 0 ;
+    margin-inline-start: 0;
+    border: none;
+    background-color: gold;
 }
 
 footer > #largeurPage{

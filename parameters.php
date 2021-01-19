@@ -80,27 +80,6 @@ n'est pas pré remplie.
 							    }
 						    ?>
 
-                            <label>Mot de passe</label>
-                            <?php
-							    if(empty($_POST['valider'])){
-								    $info=affichage_infos("SELECT mot_de_passe FROM utilisateur WHERE num_securite_social=".$_SESSION['id'].";","mot_de_passe");
-                                    echo '<input type="password" placeholder="Entrer le mot de passe" name="password" value="'.$info.'"required>';
-							    }
-							    else{
-                                    echo '<input type="password" placeholder="Entrer le mot de passe" name="password" required>';
-							    }
-						    ?>
-
-                            <label>Confirmer votre mot de passe</label>
-                            <?php
-							    if(empty($_POST['valider'])){
-                                    echo '<input type="password" placeholder="Entrer le mot de passe" name="password2" value="'.$info.'"required>';
-							    }
-							    else{
-                                    echo '<input type="password" placeholder="Entrer le mot de passe" name="password2" required>';
-							    }
-						    ?>
-
                             <label>Civilité</label>
                             <?php
 							    if(empty($_POST['valider'])){
@@ -121,50 +100,6 @@ n'est pas pré remplie.
                                     echo '</select>';
                                 }	
                             ?>
-
-                            <label>Statut</label>
-                            <?php
-							    if(empty($_POST['valider'])){
-								    $info=affichage_infos("SELECT statut FROM utilisateur WHERE num_securite_social=".$_SESSION['id'].";","statut");
-                                    echo '<input type="text" placeholder="Statut" name="statut" value="'.$info.'"required>';
-							    }
-							    else{
-                                    echo '<input type="text" placeholder="Statut" name="statut" required>';
-							    }
-                            ?>
-
-                            <label>Date de naissance</label>
-                            <?php
-							    if(empty($_POST['valider'])){
-								    $info=affichage_infos("SELECT date_naissance FROM utilisateur WHERE num_securite_social=".$_SESSION['id'].";","date_naissance");
-                                    echo '<input type="date" placeholder="Date de naissance" name="date_birth" value="'.$info.'"required>';
-							    }
-							    else{
-                                    echo '<input type="date" placeholder="Date de naissance" name="date_birth" required>';
-							    }
-                            ?>
-
-                            <label>Lieu de naissance</label>
-                            <?php
-							    if(empty($_POST['valider'])){
-								    $info=affichage_infos("SELECT lieu_naissance FROM utilisateur WHERE num_securite_social=".$_SESSION['id'].";","lieu_naissance");
-                                    echo '<input type="text" placeholder="Lieu de naissance" name="place_birth" value="'.$info.'"required>';
-							    }
-							    else{
-                                    echo '<input type="text" placeholder="Lieu de naissance" name="place_birth" required>';
-							    }
-                            ?>                            
-
-                            <label>Numéro de Sécurité Sociale</label>
-                            <?php
-							    if(empty($_POST['valider'])){
-								    $info=affichage_infos("SELECT num_securite_social FROM utilisateur WHERE num_securite_social=".$_SESSION['id'].";","num_securite_social");
-                                    echo '<input type="text" placeholder="N° de Sécurité Sociale" name="secu_number" value="'.$info.'"required>';
-							    }
-							    else{
-                                    echo '<input type="text" id="erreur" placeholder="N° de Sécurité Sociale" name="secu_number" minlength="15" maxlength="15" required>';
-							    }
-                            ?> 
 
                             <label>Adresse</label>
                             <?php
