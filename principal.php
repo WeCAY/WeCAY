@@ -80,7 +80,7 @@ session_start();
         <nav>
             <ul>
                 <li><a href="principal.php">Mon espace personnel</a></li>
-                <li><a href="#">Rechercher un examen</a></li>
+                <li><a href="search_exam.php">Rechercher un examen</a></li>
                 <li class="deroulant"><a href="#">Contact &ensp;</a>
                     <ul class="sous">
                         <li><a href="contact.php">Contactez-nous</a></li>

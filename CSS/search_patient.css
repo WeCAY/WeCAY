@@ -1,0 +1,444 @@
+/*POLICES*/
+@font-face {
+    font-family:'Century Gothic';
+    src: url("../police/gothic.ttf");
+}
+@font-face {
+    font-family: 'Optima';
+    src: url("../police/unicode.optima.ttf");
+}
+@font-face {
+    font-family: 'gillsans';
+    src: url("../police/gillsans.ttf");
+}
+
+@font-face{
+    font-family: 'Avenire';
+    src: url("../police/AvenirLTStd-Book.otf");
+}
+/*FIN POLICES */
+
+
+/*BODY*/
+body{
+    margin:auto;
+    padding:auto;
+    background: linear-gradient(lightskyblue, white);
+    width:100%;
+}
+#bloc_page{
+    width:100%;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: #ff5757;
+}
+
+
+/*FIN BODY*/
+
+/*LE HEADER*/
+header{
+    margin-top: 30px;
+    height: 25%;
+    margin-bottom: 0;
+}
+
+#titre_principal{
+    display: flex;
+    justify-content: center;
+}
+.logoFlottant{
+    width:12em;
+    height: 100%;
+}
+/*FIN DU HEADER*/
+
+
+/*HEADER2*/
+
+#menu *{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Avenire', sans-serif;
+}
+
+#menu{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+#menu nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(26,26,26);
+    position: sticky;
+    top: 0px;
+}
+
+#menu nav ul{
+    list-style-type: none;
+}
+
+#menu nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+#menu nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#menu nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+#menu nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+
+#menu .sous{
+    display: none;
+    /*box-shadow: 0px 1px 2px #CCC;*/
+    background-color: #333;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+#menu nav > ul li:hover .sous{
+    display: block;
+}
+#menu .sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+#menu .sous a{
+    padding: 10px;
+    border-bottom: none;
+    color: white;
+}
+#menu .sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+#menu .deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+
+/*FIN DU HEADER2*/
+
+#bloc_page h1, h2,h3{
+    font-family: 'Optima';
+}
+#bloc_page #titre{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    font-family: 'Optima';
+}
+#bloc_page #titre h1{
+    margin: 0;
+    font-size: 2.5em;
+}
+
+#bloc_page #titre h2{
+    margin: 0;
+    font-weight: normal;
+}
+
+#bloc_page #titre hr{
+    background-color: rgb(26,26,26);
+    margin: 20px auto;
+}
+.profil {
+    margin-right: 20px;
+    overflow: auto;
+    float: right;
+    width: 22%;
+    border-radius: 10px;
+    background-color: rgb(26,26,26);
+    color: white;
+    padding: 10px;
+    position: sticky;
+    top:60px;
+
+}
+
+.profil hr{
+    width: 100%;
+}
+#box{
+    margin-left: 20px;
+    width: 70%;
+}
+
+#monprofil{
+    font-family: 'gillsans';
+}
+section input[type=submit] {
+    background-color: lightskyblue;
+    color: white;
+    padding: 14px 18px;
+    margin: 8px 0;
+    border: 1px solid lightskyblue;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-family: "Century Gothic";
+    font-size: 1em;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: #ff5757;
+}
+
+input[type=submit]{
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+section input[type=submit]:hover{
+    background-color: white;
+    color: dodgerblue;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+#graph1, #graph2{
+    margin-left: 20px;
+}
+/*FOOTER*/
+footer{
+    background-color: rgb(26,26,26);
+    color: white;
+    font-family: "gillsans";
+
+}
+footer .fleche{
+    display: none;
+    width: 30px;
+}
+
+
+footer a{
+    color:white;
+    text-decoration: none;
+}
+footer a:hover{
+    color:orange;
+}
+
+footer #block1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer #block1 #gauche{
+    width:25%;
+    /*padding-left:5%;*/
+    margin-left: 10%;
+    text-align: left;
+    font-size: 1em;
+}
+footer #block1 #droite{
+    width:25%;
+    /*padding-left: 5%;*/
+    text-align: left;
+    font-size: 1em;
+}
+
+footer #block1 #centreg{
+    width:25%;
+    /*padding-left: 5%;*/
+    text-align: left;
+    font-size: 1em;
+}
+
+footer #block1 #centred{
+    width:25%;
+    /*padding-left: 5%;*/
+}
+.reseaux{
+    width: 40px;
+    margin: 2% 5% 0 0 ;
+
+}
+
+.reseaux {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease ;
+    -ms-transition:all 0.5s ease ;
+    -o-transition:all 0.5s ease ;
+    transition: all 0.5s ease;
+}
+
+.reseaux:hover {
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+    transform: scale(1.15);
+}
+
+footer h1{
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
+footer #block2{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    padding-left: 10%;
+}
+
+footer #news{
+    padding-left: 10%;
+}
+
+footer #block2 input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px 0 0 5px;
+}
+
+footer label{
+    width: 25%;
+}
+
+#block2 label{
+    padding-top: 6px;
+}
+
+footer input[type=submit] {
+    background-color: lightskyblue;
+    color: white;
+    margin: 8px 0;
+    border: 1px solid lightskyblue;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Century Gothic";
+    font-size: 90%;
+}
+
+#newsletter{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    padding-left: 2%;
+}
+
+#subscribe{
+    width: 120px;
+    border-radius: 0 5px 5px 0;
+    height: 34px;
+}
+hr {
+    height: 2px;
+    width: 50%;
+    margin-inline-start: 0;
+    border: none;
+    background-color: gold;
+}
+
+footer > #largeurPage{
+    display: none;
+}
+
+@media (max-width:1000px) {
+
+    #container {
+        width: 70%;
+    }
+
+    body{
+        font-size: 2em;
+    }
+
+    footer #block1{
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+    footer #block1 #gauche, footer #block1 #centred, footer #block1 #centreg, footer #block1 #droite{
+        width: 100%;
+        text-align: left;
+    }
+
+    footer #block1 #gauche{
+        margin:0;
+    }
+
+    footer .fleche{
+        margin-top: 25px;
+        margin-right: 5px;
+        display: flex;
+        float: left;
+    }
+
+    footer > #block1 > #gauche > .text1{
+        display: none;
+    }
+
+    footer > #block1 > #centreg > .text2{
+        display: none;
+    }
+
+    footer #block2{
+        display: flex;
+        flex-direction: column;
+        padding-right: 10%;
+    }
+
+    footer #block2 input[type=email]{
+        width: 200px;
+        height: 40px;
+    }
+
+    footer #block2 input[type=submit]{
+        height: 40px;
+        width: 155px;
+        font-size: 0.7em;
+    }
+
+    footer #block2 label{
+        width: 100%;
+    }
+
+    .reseaux{
+        /*margin: 0 0 0 50px;*/
+        width: 80px;
+
+    }
+
+    footer #newsletter{
+        padding-left: 0%;
+        margin-bottom: 20px;
+
+    }
+
+}
+
+/*FIN FOOTER*/

@@ -42,7 +42,7 @@ session_start();
             <nav>
                 <ul>
                     <li><a href="medecin.php">Mon espace personnel</a></li>
-                    <li><a href="#">Rechercher un patient</a></li>
+                    <li><a href="search_patient.php">Rechercher un patient</a></li>
                     <li class="deroulant"><a href="#">Contact &ensp;</a>
                         <ul class="sous">
                             <li><a href="#">Contactez-nous</a></li>
