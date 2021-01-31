@@ -16,7 +16,6 @@
 /*BODY*/
 body{
     margin:auto;
-    padding:auto;
     background: linear-gradient(lightskyblue, white);
 }
 #bloc_page{
@@ -32,10 +31,11 @@ a:hover{
 /*FIN BODY*/
 
 /*LE HEADER*/
+/*
 header{
     height: 25%;
     margin-bottom: 0;
-}
+}*/
 
 #titre_principal{
     display: flex;
@@ -277,8 +277,8 @@ footer > #largeurPage{
 
 @media (max-width:1000px) {
 
-    #container {
-        width: 70%;
+    #formulaire{
+        width: 75%;
     }
 
     body{

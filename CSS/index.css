@@ -20,10 +20,15 @@
 
 
 /*BODY*/
+
+html{
+    height: 100%;
+}
 body{
     margin:auto;
     background: linear-gradient(lightskyblue, white);
 }
+
 a{
     color: black;
 }
@@ -334,3 +339,13 @@ footer > #largeurPage{
 
 /*FIN FOOTER*/
 
+@media (min-height:1700px){
+    html{
+        height: 100%;
+    }
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}

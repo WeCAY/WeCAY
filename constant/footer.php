@@ -21,7 +21,7 @@
             <img src="./image/next-2.png" class="fleche">
             <h1 onclick="montrer2()">SERVICE CLIENT</h1>
             <hr>
-            <p class="text2"><a href="mailto:contact@wecay.fr">Nous contacter</a></p>
+            <p class="text2"><a href="contact.php">Nous contacter</a></p>
             <p class="text2"><a href="./faq.php">FAQ</a></p>
         </div>
         <div id="centred">

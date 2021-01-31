@@ -1,6 +1,5 @@
 <?php
 
-include "constant/header.php";
 
 session_start();
 
@@ -14,6 +13,9 @@ session_start();
     <link rel="stylesheet" href="CSS/contact.css"/>
 </head>
 <body>
+<?php
+include "constant/header.php";
+?>
 <section>
     <div id="formulaire">
         <h1>Contactez-nous</h1>

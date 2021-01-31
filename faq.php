@@ -19,7 +19,7 @@ session_start();
     <meta charset="utf-8" />
     <link rel="stylesheet" href="CSS/faq.css" />
     <script rel="script" type="text/javascript" src="./js/derouler.js"></script>
-    <title>Accueil | WeCAY</title>
+    <title>FAQ | WeCAY</title>
 
     <?php
        // echo getNavigation();
@@ -30,7 +30,7 @@ session_start();
     <div id="bloc_page">
         <?php include("constant/header.php");?>
 
-        <h1>Foire aux questions</h1>
+        <h1>Frequently Asked Questions</h1>
         <?php
             echo show_nav_faq();
             echo showFaq();

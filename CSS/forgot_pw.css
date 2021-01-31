@@ -319,4 +319,15 @@ footer > #largeurPage{
 
 }
 
+
 /*FIN FOOTER*/
+@media (min-height:1700px){
+    html{
+        height: 100%;
+    }
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}

@@ -81,7 +81,7 @@ session_start();
             <ul>
                 <li><a href="principal.php">Mon espace personnel</a></li>
                 <li><a href="search_exam.php">Rechercher un examen</a></li>
-                <li class="deroulant"><a href="#">Contact &ensp;</a>
+                <li class="deroulant"><a href="contact.php">Contact &ensp;</a>
                     <ul class="sous">
                         <li><a href="contact.php">Contactez-nous</a></li>
                         <li><a href="#">Chatbot</a></li>
