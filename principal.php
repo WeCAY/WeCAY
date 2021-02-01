@@ -21,7 +21,7 @@ session_start();
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="CSS/principal.css" />
-    <title>Accueil | WeCAY</title>
+    <title>Espace Patient | WeCAY</title>
 </head>
 
 <body>
@@ -91,7 +91,6 @@ session_start();
                 <li class="deroulant"><a href="#"><?php echo $_SESSION['prenom']." ".$_SESSION['nom']?> &ensp;</a>
                     <ul class="sous">
                         <li><a href="./parameters.php">Modifier mes informations</a></li>
-                        <li><a href="#">Paramètres du compte</a></li>
                         <li><a href="./database/deconnect.php">Déconnexion</a></li>
                     </ul>
                 </li>

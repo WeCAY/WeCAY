@@ -19,7 +19,7 @@ if($stmt->execute(array(':login' => $login)) && $row = $stmt->fetch())
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="CSS/activation.css" />
-    <title>Activation | WeCAY</title>
+    <title>Activation du compte | WeCAY</title>
 </head>
 <body>
 <div id="bloc_page">

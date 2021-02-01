@@ -18,7 +18,7 @@ session_start();
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="CSS/search_patient.css" />
-    <title>Accueil | WeCAY</title>
+    <title>Rechercher un examenn | WeCAY</title>
 
 </head>
 

@@ -22,7 +22,7 @@ n'est pas pré remplie.
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="CSS/subscription.css" />
-        <title>Modification des données | WeCAY</title>
+        <title>Modifier mes informations | WeCAY</title>
     </head>
 
     <body>
