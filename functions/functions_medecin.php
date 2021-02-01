@@ -4,43 +4,7 @@
 	On se connecte à la base de données
 	*/
 	require_once "./database/connect.php";
-
 	
-	/*
-	Fonction qui gère le menu de navigation selon l'utilisateur. A intégrer une fois que toutes les fonctionnalités des utilisateurs seront ok.
-	*/
-function getNavigation(){
-
-    $result = '<div>';
-    if(isset($_SESSION['session']) && $_SESSION['session']==1){ //case when yo're connected
-        $result .= '<div><nav><a href="./database/deconnect.php">Déconnexion</a></nav></div>';
-        $result .= '<div><nav><a href="./parameters.php">Modifier mes informations</a></nav></div>';
-    }
-    $result .= '<div>';
-//		$result .= '<nav>';
-
-    /*		if(isset($_SESSION['session']) && $_SESSION['statut']=="Admin" && $_SESSION['session']==1){ //case when yo're connected
-                $result .= '<a href="./admin.php">Admin</a>';
-                $result .= '<a href="./access.php">Gérer les droits utilisateurs</a>';
-            }
-
-            if(isset($_SESSION['session']) && $_SESSION['statut']=="Docteur" && $_SESSION['session']==1){ //case when yo're connected
-                $result .= '<a href="./search.php">Recherche</a>';
-            }
-
-            if(isset($_SESSION['session']) && $_SESSION['statut']=="Patient" && $_SESSION['session']==1){ //case when yo're connected
-                $result .= '<a href="./principal.php">Accueil</a>';		}
-
-            $result .= '<a href="./parameters.php">Paramètres du Compte</a>';
-    */
-//		$result .= '</nav>';
-//		$result .= '</div>';
-//		$result .= '</div>';
-
-    return $result;
-
-}
-
 	/*
 	*Cette fonction affiche les informations personnelles d'un utilisateur dans un tableau.
 	*/
@@ -104,7 +68,6 @@ function getNavigation(){
 		$dbconn=ConnectDb();
 		$sth=$dbconn->prepare($req);
 		$sth->execute();
-
 		echo "<table width='100%'>";
 		echo "<thead>";
 		echo "<tr>";
@@ -112,6 +75,9 @@ function getNavigation(){
 		echo "<th>Prénom</th>";
 		echo "<th>Numéro de sécurité sociale</th>";
 		echo "<th>Date du Test réalisé</th>";
+		echo "<th>Température</th>";
+		echo "<th>Pouls</th>";
+		echo "<th>Machine utilisée</th>";
 		echo"</tr>";
 		echo "</thead>";
 		echo "<tbody>";
@@ -126,6 +92,9 @@ function getNavigation(){
 			echo "<td>".$result['prenom']."</td>";
 			echo "<td>".$result['num_securite_social']."</td>";
 			echo "<td>".$result['date_test']."</td>";
+			echo "<td>".$result['temperature']."°C"."</td>";
+			echo "<td>".$result['pouls']." bpm"."</td>";
+			echo "<td>".$result['numero_serie']."</td>";
 			if($lign == 2){
                 echo"</tr>";
                 $lign = 0;

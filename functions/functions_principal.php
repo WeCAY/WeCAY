@@ -61,7 +61,7 @@ function showAccount($id){
             echo"<tr>";
         }
         echo "<td>";
-
+        
         if($result['civilite'] === 'M.'){
             $term = '';
             $civ = $result['civilite'];
