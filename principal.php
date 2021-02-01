@@ -65,7 +65,7 @@ session_start();
                     if ($nbJours>1){
                         $term = 's';
                     }
-                    echo "<p>Mon dernier examen a été effectué il y a ".$nbJours." jour".$term."</p>";
+                    echo "<p>Mon dernier examen a été effectué il y a ".$nbJours." jour </p>";
 
                 }
 

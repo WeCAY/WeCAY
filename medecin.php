@@ -1,6 +1,7 @@
 <?php
 
 require_once "./functions/functions_medecin.php";
+require_once "./functions/functions_principal.php";
 require_once "./database/connect.php";
 
 session_start();
@@ -32,11 +33,17 @@ session_start();
         ?>
         <h1>Espace médecin</h1>
 
-         <div>
-        <?php
-        //A voir si utile de mettre sur la page du médecin. Pas toutes ses infos mais qques unes.
-            echo showAccount_medecin($_SESSION['id']);
-        ?>
+        <div class="profil">
+            <article >
+                <h1 onclick="description()">Mon profil <img src="./image/next-2.png" width="15px" class="fleche" ></h1>
+                <hr>
+                <div id="monprofil">
+                    <?php
+                    echo showAccount($_SESSION['id']);
+                    ?>
+                </div>
+
+            </article>
         </div>
         <div id="menu">
             <nav>
@@ -74,7 +81,7 @@ session_start();
         </article>
 
         <article>
-            <h3 class="suggest">Liste des patients</h3>
+            <h3 class="suggest">Liste des derniers test effectués</h3>
             <div>
                 <form method="POST" action="#">
                     <select name="select_box_tri" required>
