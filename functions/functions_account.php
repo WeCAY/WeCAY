@@ -22,7 +22,14 @@ function connectAccount() {
     $password=$_POST['password'];
 
     $conn_req= "SELECT mot_de_passe FROM utilisateur WHERE num_securite_social like '".$identifiant."'";
-    if(checkAccount($conn_req,$password)){
+    $db=connectDb();
+    $stmt = $db->prepare("SELECT actif FROM utilisateur WHERE num_securite_social like :login ");
+    if($stmt->execute(array(':login' => $identifiant))  && $row = $stmt->fetch())
+    {
+        $actif = $row['actif']; // $actif contiendra alors 0 ou 1
+    }
+
+    if(checkAccount($conn_req,$password) && $actif==1){
         $_SESSION['session']=1;
         $_SESSION['id'] = $identifiant;
         $_SESSION['password'] = $password;
@@ -87,7 +94,6 @@ function checkStatut($identifiant){
 
 
 ?>
-
 
 </body>
 </html>

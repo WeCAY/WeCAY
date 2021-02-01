@@ -1,8 +1,11 @@
 <?php
 require_once "./functions/functions_subscription.php";
+require_once "database/connect.php";
 
 if(isset($_POST['inscription'])){
     inscription();
+
+
 }
 
 

@@ -29,11 +29,15 @@
 
         $token = uniqid();
         $url = "http://wecay.alwaysdata.net/token?token=$token";
+        $sujet = "Mot de passe oublié - WeCAY";
+        $message = "Réinitialisation de votre mot de passe - WeCAY
+        Cliquez sur le lien pour réinitialiser votre mot de passe : $url
+        ---------------
+        Ceci est un mail automatique, Merci de ne pas y répondre.";
 
-        $message = "Cliquez sur le lien pour réinitialiser votre mot de passe : $url";
-        $headers = 'Content-Type: text/plain; charset="utf-8"'." ";
+        $headers = "From: noreply@wecay.com";
 
-        if(mail($_POST['mail'], 'Mot de passe oublié', $message, $headers))
+        if(mail($_POST['mail'], $sujet, $message, $headers))
         {
             $db = connectDb();
             $sql = "UPDATE utilisateur SET token = ? WHERE email = ?";
